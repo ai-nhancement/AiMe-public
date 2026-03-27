@@ -205,6 +205,8 @@ AiMe was built by a single developer starting in November 2025. The entire syste
 
 The project is not open source at this time. This repository contains documentation, essays, and architectural descriptions to share the thinking behind the work.
 
+**Interested in investing, partnering, or learning more?** Read the [Investment & Partnership Brief](OPPORTUNITY.md).
+
 For inquiries: [ai-nhancement](https://github.com/ai-nhancement)
 
 ---
