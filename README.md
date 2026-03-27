@@ -1,4 +1,4 @@
-# AiMe (Amy)
+# AiMe
 
 **A Memory-Augmented Cognitive Intelligence System**
 
@@ -116,7 +116,7 @@ Models are interchangeable. The system remains itself while models change.
 
 AiMe is part of a connected four-system architecture:
 
-**AiMe (Amy)** — The governed cognitive runtime. Personal companion. The primary working system.
+**AiMe** — The governed cognitive runtime. Personal companion. The primary working system.
 
 **Ethos** — Behavioral value extraction. Extracts what was demonstrated, under what significance, against what resistance. Produces a live value profile from actual behavior, not stated intent. Generates training signal for environmentally trained models.
 
@@ -182,7 +182,7 @@ These essays and blog posts explain the thinking behind the architecture:
 
 ### Essays
 
-- [A Day in the Life with Amy](essays/a_day_in_the_life_with_amy.md) — Real conversations from the system, quoted directly from the evidence ledger, showing what daily life with a governed AI companion actually looks like.
+- [A Day in the Life with AiMe](essays/a_day_in_the_life_with_amy.md) — Real conversations from the system, quoted directly from the evidence ledger, showing what daily life with a governed AI companion actually looks like.
 
 ### Architecture
 
@@ -194,7 +194,7 @@ These essays and blog posts explain the thinking behind the architecture:
 ### Vision
 
 - [Project Brief](vision/project_brief.md) — Full project overview in plain language.
-- [Product Family Overview](vision/product_family_overview.md) — Amy, Ethos, Verum, and Marshall.
+- [Product Family Overview](vision/product_family_overview.md) — AiMe, Ethos, Verum, and Marshall.
 - [Development Plan](vision/development_plan.md) — Six-phase upgrade roadmap.
 
 ---

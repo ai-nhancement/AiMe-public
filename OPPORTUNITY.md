@@ -18,7 +18,7 @@ This brief describes what exists today, what is planned, and what we are looking
 
 ## What Exists Today
 
-AiMe (Amy) is a Memory-Augmented Cognitive Intelligence system running locally on hardware assembled by the developer. It is built around one core principle: **Human-Led, System-Controlled.** The human retains authority. The system governs execution, memory, and initiative. The model is a subordinate narrator — it does not route, own memory, or decide when to speak.
+AiMe is a Memory-Augmented Cognitive Intelligence system running locally on hardware assembled by the developer. It is built around one core principle: **Human-Led, System-Controlled.** The human retains authority. The system governs execution, memory, and initiative. The model is a subordinate narrator — it does not route, own memory, or decide when to speak.
 
 ### Shipped and Stable
 
@@ -53,7 +53,7 @@ AiMe (Amy) is a Memory-Augmented Cognitive Intelligence system running locally o
 
 The system references personal details naturally in conversation — not reciting facts, but weaving them into responses the way a person who knows you would. It reminds you about your evening medication inside a goodnight message, choosing the specific medication that applies at that time of day. It leads with your daughter's birthday before the morning emails. It asks about your son's homework because it knows you were helping him earlier. It adjusts tone based on whether you were up late the night before.
 
-These moments are documented with exact quotes from the evidence ledger in the essay [A Day in the Life with Amy](essays/a_day_in_the_life_with_amy.md).
+These moments are documented with exact quotes from the evidence ledger in the essay [A Day in the Life with AiMe](essays/a_day_in_the_life_with_amy.md).
 
 ---
 
@@ -95,7 +95,7 @@ This gives AiMe reach beyond the local machine without compromising the governed
 
 AiMe is the primary system, but the architecture supports four connected products:
 
-**AiMe (Amy)** — Governed cognitive runtime. Personal companion. The working system.
+**AiMe** — Governed cognitive runtime. Personal companion. The working system.
 
 **Ethos** — Behavioral value extraction. Produces live value profiles from demonstrated behavior. Generates training signal for environmentally trained models.
 

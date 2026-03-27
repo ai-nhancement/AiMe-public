@@ -35,7 +35,7 @@ The project has four components. They are related but distinct.
 
 ---
 
-**AiMe (Amy)**
+**AiMe**
 
 AiMe is the primary working system. It is a personal cognitive architecture running locally, built around one person and one relationship.
 

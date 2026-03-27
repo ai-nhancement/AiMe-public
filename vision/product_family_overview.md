@@ -1,4 +1,4 @@
-# Amy, Ethos, Verum, and Marshall
+# AiMe, Ethos, Verum, and Marshall
 ## An Informal Overview of the Product Family, the Current Working State, and Why This Direction Matters
 
 **Prepared:** March 16, 2026  
@@ -21,7 +21,7 @@ That means:
 
 From that principle, four connected systems have emerged:
 
-- **Amy**: a governed cognitive runtime for real workflows
+- **AiMe**: a governed cognitive runtime for real workflows
 - **Ethos**: a behavioral value-extraction engine built from documented human conduct
 - **Verum**: an evaluation and certification layer that tests AI outputs against behavioral evidence rather than stated ideals
 - **Marshall**: an infrastructure guardian that applies the same deterministic, auditable philosophy to operations and reliability
@@ -32,11 +32,11 @@ The important point is not that all four are equally mature. They are not. The i
 
 ## What This Company Actually Has Today
 
-### 1. Amy: A Working Governed AI Runtime
+### 1. AiMe: A Working Governed AI Runtime
 
-Amy is the most mature system in the family and the clearest proof that the underlying direction is viable.
+AiMe is the most mature system in the family and the clearest proof that the underlying direction is viable.
 
-At a practical level, Amy is a working AI operating layer built around deterministic routing, tool-first execution, persistent memory, and a governed runtime rather than a raw chatbot loop. The system already includes:
+At a practical level, AiMe is a working AI operating layer built around deterministic routing, tool-first execution, persistent memory, and a governed runtime rather than a raw chatbot loop. The system already includes:
 
 - a live multi-stage cognitive pipeline with routing, execution, prompt assembly, narration, and post-turn analysis
 - persistent memory infrastructure with an append-only evidence ledger
@@ -47,14 +47,14 @@ At a practical level, Amy is a working AI operating layer built around determini
 - web UI and runtime surfaces
 - working integrations around email, scheduling, knowledge storage, coding support, and retrieval
 
-This matters because most AI products today are still wrappers around a model. Amy is built from the opposite premise: the system owns memory, identity, execution, and governance, while models are interchangeable reasoning engines inside that system.
+This matters because most AI products today are still wrappers around a model. AiMe is built from the opposite premise: the system owns memory, identity, execution, and governance, while models are interchangeable reasoning engines inside that system.
 
 That has two immediate commercial advantages:
 
 1. It reduces dependence on any single model vendor.
 2. It creates a path to safer, more auditable deployment in real workflows.
 
-Amy is not just "an assistant." It is the foundation for a governed AI runtime that can be adapted to personal use, enterprise workflows, or specialized domains where truth, continuity, and controlled execution matter more than flashy demos.
+AiMe is not just "an assistant." It is the foundation for a governed AI runtime that can be adapted to personal use, enterprise workflows, or specialized domains where truth, continuity, and controlled execution matter more than flashy demos.
 
 ### 2. Ethos: A Working Behavioral Value Extraction Engine
 
@@ -137,14 +137,14 @@ This is not four unrelated experiments.
 
 They are different expressions of the same architecture:
 
-- **Amy** governs cognitive work
+- **AiMe** governs cognitive work
 - **Ethos** extracts behavioral evidence
 - **Verum** evaluates alignment against that evidence
 - **Marshall** governs operational infrastructure using the same auditable design philosophy
 
 Together they form a product family with unusual internal reinforcement.
 
-Amy creates governed AI behavior.  
+AiMe creates governed AI behavior.  
 Ethos creates a behavioral value corpus.  
 Verum tests whether AI behavior matches that corpus.  
 Marshall proves the same architectural principles can work in a harder domain where auditability and confidence gating matter even more.
@@ -188,11 +188,11 @@ Ethos and Verum push the company toward behavioral validation, not abstract alig
 
 ### 4. Auditability as a design invariant
 
-Both Amy and Marshall are built around append-only evidence and accountable system behavior. That is exactly what regulated, operational, and enterprise environments need.
+Both AiMe and Marshall are built around append-only evidence and accountable system behavior. That is exactly what regulated, operational, and enterprise environments need.
 
 ### 5. A real path to compounding value
 
-Most assistants reset at the end of the session. Amy is built around continuity. Ethos compounds into a corpus. Verum compounds into an evaluation framework. Marshall compounds into operational history and learned action quality. These systems improve by accumulating structured evidence over time.
+Most assistants reset at the end of the session. AiMe is built around continuity. Ethos compounds into a corpus. Verum compounds into an evaluation framework. Marshall compounds into operational history and learned action quality. These systems improve by accumulating structured evidence over time.
 
 ---
 
@@ -227,7 +227,7 @@ The value of funding here is not to rescue a vague idea. It is to accelerate and
 
 With the right support, the next stage would likely be:
 
-- productizing Amy into a cleaner enterprise-facing runtime and demo environment
+- productizing AiMe into a cleaner enterprise-facing runtime and demo environment
 - maturing Ethos from a strong extraction engine into a larger-scale corpus and API product
 - turning Verum into a real evaluation service with clear certification and scoring surfaces
 - advancing Marshall from Phase 0 foundation into bounded autonomous operations with human approval and later evidence-based certification
@@ -261,7 +261,7 @@ That is enough to justify serious attention.
 
 What is here today is an early but credible foundation for a different kind of AI company.
 
-Amy shows that governed cognitive runtime architecture can be built and made operational.  
+AiMe shows that governed cognitive runtime architecture can be built and made operational.  
 Ethos shows that alignment data can be approached through behavioral evidence rather than only hypotheticals.  
 Verum provides the path from corpus to proof.  
 Marshall shows the same philosophy can extend into infrastructure, where deterministic control and auditability are not optional.
