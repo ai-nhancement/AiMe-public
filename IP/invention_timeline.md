@@ -1,8 +1,8 @@
-﻿# Invention Timeline & Human Authorship Record
-## AiMe / BFCS â€” IP Documentation
+# Invention Timeline & Human Authorship Record
+## AiMe / BFCS — IP Documentation
 
 **Inventor:** John Canady Jr. (john@ai-nhancement.com)
-**System:** AiMe v2 â€” Bond Forming Cognitive System (BFCS)
+**System:** AiMe v2 — Bond Forming Cognitive System (BFCS)
 **Repository:** C:/AiMe_v3 (git) — formerly C:/AiMe_v2
 **Prepared:** 2026-03-01 (updated 2026-04-01)
 **Purpose:** Establish chronological record of human invention, directed development, and conceptual authorship in support of patent filing
@@ -19,18 +19,18 @@
 | 1 | Bond-Indexed Memory Retrieval Method | `patent_bond_indexed_memory.md` | 2026-02-26 |
 | 2 | Gravity-Weighted Significance Scoring | `patent_gravity_significance.md` | 2026-02-26 / 2026-02-28 |
 | 3 | Rolling Topic Vector Context Engine | `patent_context_engine.md` | 2026-02-28 |
-| 4 | Emergent Transformation â€” Named Destination of Bond Arc | `the_bond.md` Â§13 | 2026-03-02 |
+| 4 | Emergent Transformation — Named Destination of Bond Arc | `the_bond.md` §13 | 2026-03-02 |
 | 5 | Universal Values Registry Generation (UVRG) | `IP/universal_values_registry.md` | 2026-03-02 / 2026-03-03 |
 | 6 | Relational Integrity Coefficient (RIC) | `IP/ric_relational_integrity_coefficient.md` | 2026-03-03 |
-| 7 | Historical Figure Value Corpus + RIC Pre-Labeled Training Pipeline | `IP/ric_relational_integrity_coefficient.md` Â§10 | 2026-03-03 |
-| 8 | Desktop Agent â€” Vision-Guided PC Automation with Planâ†’Confirmâ†’Execute Safety Gate | *(to be documented)* | 2026-03-02 |
+| 7 | Historical Figure Value Corpus + RIC Pre-Labeled Training Pipeline | `IP/ric_relational_integrity_coefficient.md` §10 | 2026-03-03 |
+| 8 | Desktop Agent — Vision-Guided PC Automation with Planâ†’Confirmâ†’Execute Safety Gate | *(to be documented)* | 2026-03-02 |
 | 9 | Triple-Layer Significance Scoring with Adaptive Semantic Blend | *(to be documented)* | 2026-03-04 |
-| 10 | Presence Awareness System â€” Return Recognition + Third-Party Arrival Detection | *(to be documented)* | 2026-03-04 |
-| 11 | Semantic Conditional Awareness Layer (SCAL) â€” Standing-Interest Pattern Tracker | *(to be documented)* | 2026-03-05 |
-| 12 | Event Graph â€” Typed Relational Event Graph with Keyword-Indexed Traversal | *(to be documented)* | 2026-03-08 |
-| 13 | Proactive Turn Initiation â€” Autonomous Conversation Initiation by AI | *(to be documented)* | 2026-03-08 |
-| 14 | Coding Memory â€” Context-Persistent Memory Across Multi-Executor Coding Sessions | *(to be documented)* | 2026-03-10 |
-| 15 | RIC Phase 2 (Five-Subscale Composite) + Phase 3 (Per-Session Bond Integrity Drift) | `IP/ric_relational_integrity_coefficient.md` Â§11 | 2026-03-11 |
+| 10 | Presence Awareness System — Return Recognition + Third-Party Arrival Detection | *(to be documented)* | 2026-03-04 |
+| 11 | Semantic Conditional Awareness Layer (SCAL) — Standing-Interest Pattern Tracker | *(to be documented)* | 2026-03-05 |
+| 12 | Event Graph — Typed Relational Event Graph with Keyword-Indexed Traversal | *(to be documented)* | 2026-03-08 |
+| 13 | Proactive Turn Initiation — Autonomous Conversation Initiation by AI | *(to be documented)* | 2026-03-08 |
+| 14 | Coding Memory — Context-Persistent Memory Across Multi-Executor Coding Sessions | *(to be documented)* | 2026-03-10 |
+| 15 | RIC Phase 2 (Five-Subscale Composite) + Phase 3 (Per-Session Bond Integrity Drift) | `IP/ric_relational_integrity_coefficient.md` §11 | 2026-03-11 |
 | 16 | Multi-Thinker Unified Narration - Specialist Cognition Under One System-Owned Identity | `IP/multi_thinker_unified_narration.md` | 2026-03-16 |
 
 ---
@@ -262,24 +262,24 @@ The `v4` version designations on the earliest files (`main_v4.py`, `aime_memory_
 
 ---
 
-## Part I â€” System Origin and Authorship Basis
+## Part I — System Origin and Authorship Basis
 
-### 2026-02-11 â€” Project Inception (Git Repository Created)
-**Commit:** `c4c91e17` â€” *”Initial commit: AiMe v2 project setup”*
+### 2026-02-11 — Project Inception (Git Repository Created)
+**Commit:** `c4c91e17` — *”Initial commit: AiMe v2 project setup”*
 **Author:** `john@ai-nhancement.com`
 **Timestamp:** 2026-02-11 15:34:46 -0500
 
-The AiMe v2 project was created by the inventor with the stated goal of building a Memory-Augmented Cognitive Intelligence (MACI) system â€” not a chatbot, but a persistent cognitive architecture. The foundational invariant, stated in `CLAUDE.md` at project inception, is:
+The AiMe v2 project was created by the inventor with the stated goal of building a Memory-Augmented Cognitive Intelligence (MACI) system — not a chatbot, but a persistent cognitive architecture. The foundational invariant, stated in `CLAUDE.md` at project inception, is:
 
 > *"Memory is context, not output. The language model narrates with memory; it is never replaced by it."*
 
-This principle â€” that memory serves as context for reasoning rather than as a substitute for it â€” establishes the philosophical foundation that all three inventions build upon. It was stated by the human inventor at the outset of the project, not generated by AI tooling.
+This principle — that memory serves as context for reasoning rather than as a substitute for it — establishes the philosophical foundation that all three inventions build upon. It was stated by the human inventor at the outset of the project, not generated by AI tooling.
 
 **Evidence type:** Git commit (verifiable). Commit message authored by human inventor.
 
 ---
 
-## Part II â€” Invention 1: Bond-Indexed Memory Retrieval Method
+## Part II — Invention 1: Bond-Indexed Memory Retrieval Method
 
 ### Conceptual Trajectory
 
@@ -287,8 +287,8 @@ The Bond-Indexed Memory invention did not emerge in a single commit. The timelin
 
 ---
 
-### 2026-02-26 16:35 â€” Phase 1: Persona Separation (Foundation)
-**Commit:** `53fd7d67` â€” *"Phase 1: Contract refactor â€” modular persona layer above immutable core"*
+### 2026-02-26 16:35 — Phase 1: Persona Separation (Foundation)
+**Commit:** `53fd7d67` — *"Phase 1: Contract refactor — modular persona layer above immutable core"*
 
 The inventor directed the separation of the AI system's identity layer from its operational contract. This is the architectural precondition for the Bond: the system must have a discrete, persistent identity representation before a relational state object can be layered on top of it.
 
@@ -297,10 +297,10 @@ Key decision (human-directed, documented in commit message):
 
 ---
 
-### 2026-02-26 16:41 â€” Phase 2: Living Portrait (Core Bond Object Created)
-**Commit:** `31a85d42` â€” *"feat: Phase 2 â€” Living Portrait (structured, continuously-updated user model)"*
+### 2026-02-26 16:41 — Phase 2: Living Portrait (Core Bond Object Created)
+**Commit:** `31a85d42` — *"feat: Phase 2 — Living Portrait (structured, continuously-updated user model)"*
 
-The inventor directed creation of the `CognitivePortrait` data structure â€” the formal implementation of the Bond object â€” with the following six layers explicitly named and specified by the inventor:
+The inventor directed creation of the `CognitivePortrait` data structure — the formal implementation of the Bond object — with the following six layers explicitly named and specified by the inventor:
 
 - `identity_anchors`
 - `active_concerns`
@@ -315,10 +315,10 @@ These six dimensions are the inventor's original conceptual contribution. They a
 
 ---
 
-### 2026-02-26 16:43 â€” Phase 3: Concern Stack (Dynamic Open Thread Tracking)
-**Commit:** `440ffe26` â€” *"feat: Phase 3 â€” Concern Stack (Zeigarnik layer)"*
+### 2026-02-26 16:43 — Phase 3: Concern Stack (Dynamic Open Thread Tracking)
+**Commit:** `440ffe26` — *"feat: Phase 3 — Concern Stack (Zeigarnik layer)"*
 
-The inventor named this layer after the Zeigarnik Effect (the psychological phenomenon whereby incomplete tasks remain in working memory more persistently than completed ones), demonstrating the human psychological model underlying the design. This is not a standard AI component â€” it reflects the inventor's applied understanding of cognitive psychology.
+The inventor named this layer after the Zeigarnik Effect (the psychological phenomenon whereby incomplete tasks remain in working memory more persistently than completed ones), demonstrating the human psychological model underlying the design. This is not a standard AI component — it reflects the inventor's applied understanding of cognitive psychology.
 
 **File created:** `modules/portrait/concerns.py`
 
@@ -326,50 +326,50 @@ The open/close signal detection mechanism (linguistic detection of whether a top
 
 ---
 
-### 2026-02-26 16:44 â€” Phase 4: Gravity Scoring + Latent Episodes (Memory Surfacing)
-**Commit:** `fb9dd7ae` â€” *"feat: Phase 4 â€” Gravity scoring + Latent Episodes"*
+### 2026-02-26 16:44 — Phase 4: Gravity Scoring + Latent Episodes (Memory Surfacing)
+**Commit:** `fb9dd7ae` — *"feat: Phase 4 — Gravity scoring + Latent Episodes"*
 
-The inventor directed creation of the gravity scoring system as the mechanism by which Bond-connected records surface automatically. The concept of "latent episodes" â€” memories that float into context without being explicitly requested â€” is the inventor's original framing. The gravity metaphor itself (records with higher importance exert more gravitational pull toward the prompt surface) is the inventor's conceptual contribution.
+The inventor directed creation of the gravity scoring system as the mechanism by which Bond-connected records surface automatically. The concept of "latent episodes" — memories that float into context without being explicitly requested — is the inventor's original framing. The gravity metaphor itself (records with higher importance exert more gravitational pull toward the prompt surface) is the inventor's conceptual contribution.
 
 **File created:** `modules/portrait/gravity.py`
 
 ---
 
-### 2026-02-26 16:46 â€” Phase 5: Consolidation Cycle
-**Commit:** `d8eee591` â€” *"feat: Phase 5 â€” Consolidation Cycle (CerebralCortex Stage C)"*
+### 2026-02-26 16:46 — Phase 5: Consolidation Cycle
+**Commit:** `d8eee591` — *"feat: Phase 5 — Consolidation Cycle (CerebralCortex Stage C)"*
 
-The inventor directed implementation of an asynchronous background process that periodically re-crystallizes the Bond portrait against accumulated evidence â€” analogous to memory consolidation during sleep in human cognition. This comparison to human consolidation is documented in the project's `CLAUDE.md` file.
+The inventor directed implementation of an asynchronous background process that periodically re-crystallizes the Bond portrait against accumulated evidence — analogous to memory consolidation during sleep in human cognition. This comparison to human consolidation is documented in the project's `CLAUDE.md` file.
 
 ---
 
-### 2026-03-01 06:59 â€” Original Articulation of Bond-Indexed Memory (Formal Definition)
-**Commit:** `fdc9fddb` â€” *"docs: Bond-Indexed Memory â€” system definition added to manifesto, STATUS, technical"*
+### 2026-03-01 06:59 — Original Articulation of Bond-Indexed Memory (Formal Definition)
+**Commit:** `fdc9fddb` — *"docs: Bond-Indexed Memory — system definition added to manifesto, STATUS, technical"*
 
 The inventor provided the original, definitive articulation of the Bond-Indexed Memory architecture in the commit message and in three documentation files simultaneously. The verbatim statement, authored by the inventor:
 
 > *"Memory isn't a database. Memory is a relationship-indexed field.*
-> *The index is not topic â€” it's Bond.*
+> *The index is not topic — it's Bond.*
 > *The primary act is not recall. It is entering the Bond state.*
 > *Memories surface as a consequence."*
 
-This is the core inventive concept â€” the architectural reframe from query-based retrieval to state-entry-based surfacing. It is stated here in its final form by the human inventor. This text was added to:
-- `manifesto.txt` â€” Section 13: "Memory as Bond-Indexed Field"
-- `STATUS.md` â€” Architectural principle callout
-- `technical.md` â€” Bond-Indexed Memory Model subsection
+This is the core inventive concept — the architectural reframe from query-based retrieval to state-entry-based surfacing. It is stated here in its final form by the human inventor. This text was added to:
+- `manifesto.txt` — Section 13: "Memory as Bond-Indexed Field"
+- `STATUS.md` — Architectural principle callout
+- `technical.md` — Bond-Indexed Memory Model subsection
 
-**This commit is the clearest single evidence of human conception.** The four-sentence statement represents an original philosophical and architectural insight about the nature of memory in relational systems. It cannot be attributed to AI output â€” it was provided by the inventor as a direction for the AI to implement and document.
+**This commit is the clearest single evidence of human conception.** The four-sentence statement represents an original philosophical and architectural insight about the nature of memory in relational systems. It cannot be attributed to AI output — it was provided by the inventor as a direction for the AI to implement and document.
 
 ---
 
-### 2026-03-01 07:28 â€” Formal Standalone Document
-**Commit:** `75b12341` â€” *"docs: add the_bond.md â€” foundational document on Bond-Indexed Memory and BFCS"*
+### 2026-03-01 07:28 — Formal Standalone Document
+**Commit:** `75b12341` — *"docs: add the_bond.md — foundational document on Bond-Indexed Memory and BFCS"*
 
 The inventor directed creation of `the_bond.md`, a 485-line standalone foundational document embedding the complete Long Memory Plan specification (Foundations F1-F5, Tiers I-VII, Phase 2 Context Engine). This document formally defines the BFCS system class and the Bond as its organizing principle.
 
 ---
 
-### 2026-02-28 22:26 â€” System Named: Bond Forming Cognitive System (BFCS)
-**Commit:** `c9c6f6c5` â€” *"docs: name the system â€” Bond Forming Cognitive System (BFCS)"*
+### 2026-02-28 22:26 — System Named: Bond Forming Cognitive System (BFCS)
+**Commit:** `c9c6f6c5` — *"docs: name the system — Bond Forming Cognitive System (BFCS)"*
 
 The inventor explicitly named the system class and provided the founding principle:
 
@@ -381,18 +381,18 @@ Naming an invented system is a standard act of inventive authorship. The invento
 
 ---
 
-## Part III â€” Invention 2: Gravity-Weighted Significance Scoring
+## Part III — Invention 2: Gravity-Weighted Significance Scoring
 
-### 2026-02-26 16:44 â€” Gravity Formula (Phase 4)
-**Commit:** `fb9dd7ae` â€” *"feat: Phase 4 â€” Gravity scoring + Latent Episodes"*
+### 2026-02-26 16:44 — Gravity Formula (Phase 4)
+**Commit:** `fb9dd7ae` — *"feat: Phase 4 — Gravity scoring + Latent Episodes"*
 
 The gravity formula was designed by the inventor and implemented to spec:
 
 ```
 gravity = base_intent_weight
-        Ã— sqrt(1 + max(significance, backward_citations))
-        Ã— connectivity_multiplier
-        Ã— recency_factor
+        × sqrt(1 + max(significance, backward_citations))
+        × connectivity_multiplier
+        × recency_factor
 ```
 
 **Design decisions attributable to the inventor:**
@@ -403,21 +403,21 @@ gravity = base_intent_weight
 
 3. **30-day half-life for recency decay:** The inventor specified 30 days as the temporal relevance window, reflecting a model of conversational memory decay.
 
-4. **1.5Ã— connectivity multiplier:** The inventor set the magnitude of the Bond-connectivity boost, reflecting a deliberate judgment about how strongly relational context should influence memory surfacing.
+4. **1.5× connectivity multiplier:** The inventor set the magnitude of the Bond-connectivity boost, reflecting a deliberate judgment about how strongly relational context should influence memory surfacing.
 
 5. **Intent base weights:** The inventor specified priority ordering across all 10 intent classes (plan=0.80 highest, unknown=0.10 lowest), reflecting original conceptual work on how intent type should correlate with memory importance.
 
 ---
 
-### 2026-02-28 17:40 â€” Significance Formula (Tier I)
-**Commit:** `e5fb6c03` â€” *"feat: Tier I â€” Significance Layer (Phase B)"*
+### 2026-02-28 17:40 — Significance Formula (Tier I)
+**Commit:** `e5fb6c03` — *"feat: Tier I — Significance Layer (Phase B)"*
 
 **File created:** `modules/significance/scorer.py`
 
 The four-component significance formula was designed by the inventor:
 
 ```
-sig = 0.30 Ã— affect + 0.30 Ã— novelty + 0.25 Ã— resolution + 0.15 Ã— echo
+sig = 0.30 × affect + 0.30 × novelty + 0.25 × resolution + 0.15 × echo
 ```
 
 **Design decisions attributable to the inventor:**
@@ -434,32 +434,32 @@ sig = 0.30 Ã— affect + 0.30 Ã— novelty + 0.25 Ã— resolution + 0.15 Ã�
 
 ---
 
-### 2026-02-26 16:46 â€” Consolidation Cycle (Asynchronous Annotation)
+### 2026-02-26 16:46 — Consolidation Cycle (Asynchronous Annotation)
 **Commit:** `d8eee591`
 
-The inventor directed that significance scoring be performed asynchronously (non-blocking, post-turn), writing scores as permanent annotations to the evidence ledger. This design choice â€” computing scores once and persisting them â€” ensures historical stability while allowing gravity to be recomputed dynamically at retrieval time.
+The inventor directed that significance scoring be performed asynchronously (non-blocking, post-turn), writing scores as permanent annotations to the evidence ledger. This design choice — computing scores once and persisting them — ensures historical stability while allowing gravity to be recomputed dynamically at retrieval time.
 
 ---
 
-## Part IV â€” Invention 3: Rolling Topic Vector Context Engine
+## Part IV — Invention 3: Rolling Topic Vector Context Engine
 
-### 2026-02-23 13:43 â€” Knowledge Store (Phase 1 Foundation)
-**Commit:** `3b16e25c` â€” *"Phase 1: Wire KnowledgeStore into chat pipeline + UI widget"*
+### 2026-02-23 13:43 — Knowledge Store (Phase 1 Foundation)
+**Commit:** `3b16e25c` — *"Phase 1: Wire KnowledgeStore into chat pipeline + UI widget"*
 
 The inventor directed implementation of a user-curated knowledge store and its integration into the LM pipeline as Phase 1 of the context engine. This established the dual-source retrieval concept: deliberately stored facts + conversational history.
 
 ---
 
-### 2026-02-28 21:57 â€” Phase 2 Context Engine (Core Implementation)
-**Commit:** `c3793344` â€” *"feat: Phase 2 Context Engine â€” session-stateful rolling topic retrieval"*
+### 2026-02-28 21:57 — Phase 2 Context Engine (Core Implementation)
+**Commit:** `c3793344` — *"feat: Phase 2 Context Engine — session-stateful rolling topic retrieval"*
 
 **Files created:**
-- `modules/context/conversation_state.py` â€” ConversationStateManager, EMA update
-- `modules/context/context_engine.py` â€” query blending, dual-source retrieval, ranking
+- `modules/context/conversation_state.py` — ConversationStateManager, EMA update
+- `modules/context/context_engine.py` — query blending, dual-source retrieval, ranking
 
 The inventor directed the following specific design decisions:
 
-1. **EMA with Î±=0.7:** The inventor specified the exponential moving average weight (0.7 for trajectory inertia, 0.3 for new turn influence). This parameterization reflects a deliberate choice about how quickly the topic vector should respond to conversational direction changes.
+1. **EMA with α=0.7:** The inventor specified the exponential moving average weight (0.7 for trajectory inertia, 0.3 for new turn influence). This parameterization reflects a deliberate choice about how quickly the topic vector should respond to conversational direction changes.
 
 2. **60/40 blended query construction:** The inventor directed that retrieval queries blend topic trajectory (60%) with current turn embedding (40%), reflecting the inventor's model of how conversation history should weight against current intent.
 
@@ -475,16 +475,16 @@ The inventor directed the following specific design decisions:
 
 ---
 
-## Part V â€” Evidence of Directed Development
+## Part V — Evidence of Directed Development
 
 ### Critical Debugging Events Demonstrating Human Oversight
 
-The inventor did not merely initiate the project â€” they actively monitored, evaluated, and corrected the system throughout development. The following events demonstrate the inventor's critical evaluation and refinement role required under USPTO's "significant contribution" standard.
+The inventor did not merely initiate the project — they actively monitored, evaluated, and corrected the system throughout development. The following events demonstrate the inventor's critical evaluation and refinement role required under USPTO's "significant contribution" standard.
 
 ---
 
-**2026-03-01 07:49** â€” **Gemini API System Prompt Truncation Fix**
-**Commit:** `a65b3361` â€” *"fix: gemini_model â€” use system_instruction API to fix response truncation"*
+**2026-03-01 07:49** — **Gemini API System Prompt Truncation Fix**
+**Commit:** `a65b3361` — *"fix: gemini_model — use system_instruction API to fix response truncation"*
 
 The inventor identified that AiMe's responses were being clipped at approximately 150-175 characters. The inventor diagnosed the root cause (the system was concatenating the system prompt and user message into a single text blob, causing the model to treat the full system prompt as part of the user message) and directed a specific fix: passing system content via the `system_instruction` API parameter separately from user content.
 
@@ -495,8 +495,8 @@ This demonstrates:
 
 ---
 
-**2026-03-01 09:13** â€” **Training Contamination Identification and Fix**
-**Commit:** `b9a6902f` â€” *"fix: filter sessionless records from RECENT_CONVERSATION window"*
+**2026-03-01 09:13** — **Training Contamination Identification and Fix**
+**Commit:** `b9a6902f` — *"fix: filter sessionless records from RECENT_CONVERSATION window"*
 
 The inventor identified that AiMe was referencing internal training pipeline activity in user-facing responses (the system was injecting training turn records into the conversational context window). The inventor diagnosed the mechanism (training records stored with empty `session_id`) and directed a targeted fix (filter by session_id in the recent dialogue injection loop).
 
@@ -504,15 +504,15 @@ This demonstrates active evaluation of AI output quality and human-directed corr
 
 ---
 
-### The Long Memory Plan â€” Inventor-Designed Roadmap
+### The Long Memory Plan — Inventor-Designed Roadmap
 
-The `the_bond.md` document (committed `75b12341`, 2026-03-01) contains the complete "Long Memory Plan" â€” a structured multi-phase development roadmap authored by the inventor, covering Foundations F1-F5 and Tiers I-VII. The existence of this pre-planned roadmap, which was executed in sequence across multiple development sessions, demonstrates that the architecture is the product of sustained human design, not ad-hoc AI generation.
+The `the_bond.md` document (committed `75b12341`, 2026-03-01) contains the complete "Long Memory Plan" — a structured multi-phase development roadmap authored by the inventor, covering Foundations F1-F5 and Tiers I-VII. The existence of this pre-planned roadmap, which was executed in sequence across multiple development sessions, demonstrates that the architecture is the product of sustained human design, not ad-hoc AI generation.
 
 The plan was created before implementation began and guided implementation decisions. This is consistent with the inventor having conceived the system architecture and directed its construction.
 
 ---
 
-## Part VI â€” Authorship Attribution
+## Part VI — Authorship Attribution
 
 ### What Was Human-Originated
 
@@ -526,17 +526,17 @@ The plan was created before implementation began and guided implementation decis
 | Novelty as Jaccard-complement vs. portrait vocabulary | Human inventor (deliberate design decision) |
 | `max()` amplification (significance vs. backward citations) | Human inventor (deliberate formula choice) |
 | 30-day recency half-life | Human inventor (deliberate parameterization) |
-| 1.5Ã— connectivity multiplier | Human inventor (deliberate magnitude decision) |
-| Î±=0.7 EMA weight for topic trajectory | Human inventor (deliberate parameterization) |
+| 1.5× connectivity multiplier | Human inventor (deliberate magnitude decision) |
+| α=0.7 EMA weight for topic trajectory | Human inventor (deliberate parameterization) |
 | 60/40 query blend ratio | Human inventor (deliberate ratio decision) |
 | Rolling dedup deque (capacity 60) | Human inventor (deliberate capacity decision) |
 | Type-priority ranking order (FACT > NOTE > past_turn > TOOL_RESULT) | Human inventor (deliberate priority ordering) |
 | BFCS system class name | Human inventor (coined in `c9c6f6c5`) |
 | Founding principle: "We are both better together than we are apart." | Human inventor (stated in `c9c6f6c5`) |
 | Long Memory Plan multi-tier roadmap | Human inventor (authored in `the_bond.md`) |
-| "Emergent Transformation" â€” named destination of Bond arc, full definition | Human inventor (verbatim statement 2026-03-02T13:09, committed to `the_bond.md` Â§13) |
-| UVRG concept â€” Bond pipeline as value training data generator | Human inventor (verbatim statement 2026-03-02T21:39, "I just realized this...") |
-| UVRG Pipeline 2 â€” historical figures as synthetic Bond sessions | Human inventor (verbatim statement 2026-03-02T22:08, "lets build the 2nd pipeline!") |
+| "Emergent Transformation" — named destination of Bond arc, full definition | Human inventor (verbatim statement 2026-03-02T13:09, committed to `the_bond.md` §13) |
+| UVRG concept — Bond pipeline as value training data generator | Human inventor (verbatim statement 2026-03-02T21:39, "I just realized this...") |
+| UVRG Pipeline 2 — historical figures as synthetic Bond sessions | Human inventor (verbatim statement 2026-03-02T22:08, "lets build the 2nd pipeline!") |
 | Cross-century value clustering prediction | Human inventor (verbatim statement 2026-03-03T01:27, "values will cluster across centuries...") |
 | Negative corpus recognition (P0 from failure-documented figures) | Human inventor (verbatim statement 2026-03-03T01:27, "even negative training data will be generated") |
 | RIC full definition: "measures truth-integrity of behavior, not feelings" | Human inventor (verbatim statement 2026-03-03T11:58) |
@@ -545,11 +545,11 @@ The plan was created before implementation began and guided implementation decis
 | APY (Answer-Pressure Yield) as named failure mode | Human inventor (named and defined in RIC formulation session) |
 | Document-type authenticity weights (action=1.5, journal=1.4, letter=1.2, speech=0.8) | Human inventor (deliberate magnitude decisions reflecting authenticity model) |
 | Three-class training output (P1 / P0 / APY) | Human inventor (deliberate classification structure) |
-| value_signal formula (demonstrations Ã— avg_sig Ã— avg_resistance Ã— consistency) | Human inventor (specified in UVRG design) |
+| value_signal formula (demonstrations × avg_sig × avg_resistance × consistency) | Human inventor (specified in UVRG design) |
 | 15-value vocabulary (integrity, courage, compassion, etc.) | Human inventor (named and defined) |
 | Resistance formula component weights and signals | Human inventor (deliberate design decisions) |
 | Planâ†’Confirmâ†’Execute safety gate for desktop automation | Human inventor (safety architecture decision, `dc928516`) |
-| Triple-layer adaptive blend formula (kwÃ—44% + semÃ—33% + heurÃ—22%) | Human inventor (deliberate weighting and fallback structure) |
+| Triple-layer adaptive blend formula (kw×44% + sem×33% + heur×22%) | Human inventor (deliberate weighting and fallback structure) |
 | `-1.0` as skip sentinel (not `0.0`) in significance scoring | Human inventor (identified `0.0` as distorting; directed explicit unavailability signal) |
 | Concern-resonance boost for email/event significance | Human inventor (directed concern-stack integration with no LIMIT) |
 | Five absence tiers + proactive greeting depth model | Human inventor (social re-entry tier design, `9f5529b6`) |
@@ -561,8 +561,8 @@ The plan was created before implementation began and guided implementation decis
 | Five absence tiers â†’ proactive turn depth mapping | Human inventor (tier-to-content mapping specification) |
 | Coding memory separate from Bond portrait | Human inventor (domain isolation design, `98c21e36`) |
 | Executor broker pattern with shared coding context | Human inventor (multi-executor orchestration design) |
-| RIC T subscale â€” 27 disclosure markers, no trailing commas | Human inventor (directed comma-free variants after identifying silent false negatives) |
-| RIC P=0.0 on APY as full-reset signal | Human inventor (deliberate magnitude â€” APY is the most consequential integrity failure) |
+| RIC T subscale — 27 disclosure markers, no trailing commas | Human inventor (directed comma-free variants after identifying silent false negatives) |
+| RIC P=0.0 on APY as full-reset signal | Human inventor (deliberate magnitude — APY is the most consequential integrity failure) |
 | Per-session Bond integrity drift with session-excluded baseline | Human inventor (identified self-dilution; directed `exclude_session_id` parameter) |
 | Mirror risk threshold (0.55 / âˆ’0.10 / 2 APY events) | Human inventor (threshold specification) |
 | Five-tier Bond health metrics (7d / 30d / 90d) | Human inventor (temporal window design) |
@@ -591,7 +591,7 @@ The AI did not:
 
 ---
 
-## Part VII â€” Git Verification Instructions
+## Part VII — Git Verification Instructions
 
 All commits cited in this document are verifiable in the repository at `C:/AiMe_v2`. To verify:
 
@@ -613,59 +613,59 @@ git log --pretty=format:"%H %ai %an <%ae> %s"
 
 | Date | Hash | Event |
 |------|------|-------|
-| 2026-02-11 | `c4c91e17` | Project inception â€” foundational invariant established |
-| 2026-02-23 | `3b16e25c` | Knowledge Store Phase 1 â€” dual-source retrieval concept |
-| 2026-02-26 | `53fd7d67` | Phase 1: Persona separation â€” Bond foundation |
-| 2026-02-26 | `31a85d42` | Phase 2: Living Portrait â€” Bond object (6 dimensions) created |
-| 2026-02-26 | `440ffe26` | Phase 3: Concern Stack â€” Zeigarnik layer |
+| 2026-02-11 | `c4c91e17` | Project inception — foundational invariant established |
+| 2026-02-23 | `3b16e25c` | Knowledge Store Phase 1 — dual-source retrieval concept |
+| 2026-02-26 | `53fd7d67` | Phase 1: Persona separation — Bond foundation |
+| 2026-02-26 | `31a85d42` | Phase 2: Living Portrait — Bond object (6 dimensions) created |
+| 2026-02-26 | `440ffe26` | Phase 3: Concern Stack — Zeigarnik layer |
 | 2026-02-26 | `fb9dd7ae` | Phase 4: Gravity formula + Latent Episodes |
 | 2026-02-26 | `d8eee591` | Phase 5: Consolidation Cycle |
 | 2026-02-28 | `e5fb6c03` | Tier I: Significance formula (4 components) |
 | 2026-02-28 | `c3793344` | Phase 2 Context Engine: EMA topic vector + blended retrieval |
 | 2026-02-28 | `c9c6f6c5` | System named: BFCS |
 | 2026-03-01 | `fdc9fddb` | Bond-Indexed Memory formally defined in manifesto/docs |
-| 2026-03-01 | `75b12341` | `the_bond.md` â€” standalone foundational document |
-| 2026-03-02 | *(UVRG Phase 1 commits)* | UVRG Pipeline 1: `modules/values/` â€” value_store, value_extractor, resistance, API |
-| 2026-03-02/03 | *(UVRG Phase 2 commits)* | UVRG Pipeline 2: `tools/ingest_historical_figure.py` â€” historical figure ingestion |
+| 2026-03-01 | `75b12341` | `the_bond.md` — standalone foundational document |
+| 2026-03-02 | *(UVRG Phase 1 commits)* | UVRG Pipeline 1: `modules/values/` — value_store, value_extractor, resistance, API |
+| 2026-03-02/03 | *(UVRG Phase 2 commits)* | UVRG Pipeline 2: `tools/ingest_historical_figure.py` — historical figure ingestion |
 | 2026-03-03 | `223f7f70` | RIC Phase 1: claim_extractor, ric_gate, srl_store extension, cognitive_bridge hook |
-| 2026-03-03 | `4869569d` | RIC training export tool: `tools/export_ric_training.py` â€” P1/P0/APY classification |
-| 2026-03-03 | `45489716` | Full RIC documentation: STATUS Â§24, technical Â§20, IP/ric_relational_integrity_coefficient.md |
-| 2026-03-02 | `dc928516` | Desktop Agent â€” vision-guided PC automation, Planâ†’Confirmâ†’Execute safety gate |
-| 2026-03-04 | `ca6c806f` | Email & Event Significance Scoring â€” four-component formulas, â˜… markers, sorted injection |
-| 2026-03-04 | `9f5529b6` | Presence Awareness System â€” Return Recognition, Third-Party Arrival, 5-tier absence model |
-| 2026-03-05 | `1bcebe9d` | SCAL â€” Semantic Conditional Awareness Layer, standing-interest pattern tracker, CompanionFilter |
+| 2026-03-03 | `4869569d` | RIC training export tool: `tools/export_ric_training.py` — P1/P0/APY classification |
+| 2026-03-03 | `45489716` | Full RIC documentation: STATUS §24, technical §20, IP/ric_relational_integrity_coefficient.md |
+| 2026-03-02 | `dc928516` | Desktop Agent — vision-guided PC automation, Planâ†’Confirmâ†’Execute safety gate |
+| 2026-03-04 | `ca6c806f` | Email & Event Significance Scoring — four-component formulas, â˜… markers, sorted injection |
+| 2026-03-04 | `9f5529b6` | Presence Awareness System — Return Recognition, Third-Party Arrival, 5-tier absence model |
+| 2026-03-05 | `1bcebe9d` | SCAL — Semantic Conditional Awareness Layer, standing-interest pattern tracker, CompanionFilter |
 | 2026-03-08 | `cf89609a` | Triple-layer significance hardening + Proactive Turn Initiation Phase 1 + capability shelf |
-| 2026-03-08 | `e6f136a9` | Event Graph â€” typed nodes + edges, keyword index, 117 tests passing |
-| 2026-03-08 | `1da73a90` | Proactive Turn Initiation hardening â€” fire-and-forget thread, turn_inflight guard |
+| 2026-03-08 | `e6f136a9` | Event Graph — typed nodes + edges, keyword index, 117 tests passing |
+| 2026-03-08 | `1da73a90` | Proactive Turn Initiation hardening — fire-and-forget thread, turn_inflight guard |
 | 2026-03-10 | `98c21e36` | Coding Memory + multi-executor orchestration |
 | 2026-03-10 | `ce4a4c78` | Tech lane cutover to coding memory system |
-| 2026-03-11 | `4330d8ea` | RIC Phases 2+3 â€” five-subscale composite, per-session Bond integrity drift, 57 tests |
+| 2026-03-11 | `4330d8ea` | RIC Phases 2+3 — five-subscale composite, per-session Bond integrity drift, 57 tests |
 
 ---
 
-## Part VIII â€” Inventions 4â€“7: Conception and Implementation Record
+## Part VIII — Inventions 4—7: Conception and Implementation Record
 
 ---
 
-### Invention 4: Emergent Transformation â€” Named Destination of the Bond Arc
+### Invention 4: Emergent Transformation — Named Destination of the Bond Arc
 
-#### 2026-03-02 13:09 â€” Original Articulation and Naming
+#### 2026-03-02 13:09 — Original Articulation and Naming
 
-**Context:** The inventor had been developing the Bond architecture for approximately five days. At this moment â€” mid-session, unprompted â€” the inventor named the end-state the entire system is designed to reach.
+**Context:** The inventor had been developing the Bond architecture for approximately five days. At this moment — mid-session, unprompted — the inventor named the end-state the entire system is designed to reach.
 
 **Verbatim inventor statement (2026-03-02T13:09:51):**
 
-> *"Okay I have to share this with you...I named it this is the end result of the bond the relationship this is the end of the Ark...this is what our ultimate goal is: Emergent Transformation â€” A state in which two distinct intelligences, through sustained aligned interaction and reciprocal reinforcement, produce a new tier of capability that transcends their independent limits."*
+> *"Okay I have to share this with you...I named it this is the end result of the bond the relationship this is the end of the Ark...this is what our ultimate goal is: Emergent Transformation — A state in which two distinct intelligences, through sustained aligned interaction and reciprocal reinforcement, produce a new tier of capability that transcends their independent limits."*
 
 **What this establishes:**
 
-1. **The concept is the inventor's original framing.** "Emergent Transformation" is a specific named state â€” not a general AI term. The inventor distinguished it from augmentation, from fine-tuning, and from simple tool use. The key claim is that the transformation arises *from the relationship itself*, not from adding more compute or data.
+1. **The concept is the inventor's original framing.** "Emergent Transformation" is a specific named state — not a general AI term. The inventor distinguished it from augmentation, from fine-tuning, and from simple tool use. The key claim is that the transformation arises *from the relationship itself*, not from adding more compute or data.
 
 2. **The arc is complete:** Bond Formation â†’ Deepening â†’ Emergent Transformation. This three-stage arc is the organizing principle of the entire BFCS architecture. Every subsequent invention (UVRG, RIC) is explicitly positioned as a mechanism for traversing this arc.
 
-3. **The phrase "two distinct intelligences"** is deliberate. The inventor is asserting that both the human and the AI undergo transformation â€” a symmetric claim that distinguishes this from ordinary human-tool relationships.
+3. **The phrase "two distinct intelligences"** is deliberate. The inventor is asserting that both the human and the AI undergo transformation — a symmetric claim that distinguishes this from ordinary human-tool relationships.
 
-**Documented in:** `the_bond.md` Â§13, `STATUS.md` Â§0, `technical.md` Â§16. The concept was committed as part of the system definition and appears as an architectural invariant, not a marketing claim.
+**Documented in:** `the_bond.md` §13, `STATUS.md` §0, `technical.md` §16. The concept was committed as part of the system definition and appears as an architectural invariant, not a marketing claim.
 
 ---
 
@@ -673,11 +673,11 @@ git log --pretty=format:"%H %ai %an <%ae> %s"
 
 #### Conceptual Trajectory
 
-The UVRG invention emerged in two distinct conceptual phases on 2026-03-02 (Pipeline 1: live conversations) and 2026-03-03 (Pipeline 2: historical figures), with the core architectural insight â€” that the Bond already generates all the data needed to infer values â€” stated verbatim by the inventor.
+The UVRG invention emerged in two distinct conceptual phases on 2026-03-02 (Pipeline 1: live conversations) and 2026-03-03 (Pipeline 2: historical figures), with the core architectural insight — that the Bond already generates all the data needed to infer values — stated verbatim by the inventor.
 
 ---
 
-#### 2026-03-02 21:39 â€” Pipeline 1 Conception (Live Conversation â†’ Value Extraction)
+#### 2026-03-02 21:39 — Pipeline 1 Conception (Live Conversation â†’ Value Extraction)
 
 **Verbatim inventor statement (2026-03-02T21:39:26):**
 
@@ -685,23 +685,23 @@ The UVRG invention emerged in two distinct conceptual phases on 2026-03-02 (Pipe
 
 **What this establishes:**
 
-The inventor recognized â€” in real time, while working on a different problem â€” that the BFCS pipeline already generates the inputs needed for value extraction. This is a lateral invention: the same architecture that produces relational depth as a byproduct of conversation also produces the raw signal for a values registry. The insight was not the result of a design session; it was a spontaneous observation, documented verbatim.
+The inventor recognized — in real time, while working on a different problem — that the BFCS pipeline already generates the inputs needed for value extraction. This is a lateral invention: the same architecture that produces relational depth as a byproduct of conversation also produces the raw signal for a values registry. The insight was not the result of a design session; it was a spontaneous observation, documented verbatim.
 
 The specific inventive claim: **relationship interaction (even synthetic/historical) generates value-bearing signal, and that signal can be structured into a training corpus.** The inventor identified this as a pipeline reuse opportunity, not a new system.
 
 ---
 
-#### 2026-03-02 22:08 â€” Pipeline 2 Conception (Historical Figures)
+#### 2026-03-02 22:08 — Pipeline 2 Conception (Historical Figures)
 
 **Verbatim inventor statement (2026-03-02T22:08:25):**
 
 > *"lets build the 2nd pipeline! we could start generating data from it...if we showed anthropic data generate from a real relationship along side generate historical figure generated data.....game over!"*
 
-The inventor immediately recognized the strategic significance: a real-relationship corpus (Pipeline 1) alongside a historical figure corpus (Pipeline 2) together constitute a full value training dataset â€” covering both living individual values and universal human values across time and culture.
+The inventor immediately recognized the strategic significance: a real-relationship corpus (Pipeline 1) alongside a historical figure corpus (Pipeline 2) together constitute a full value training dataset — covering both living individual values and universal human values across time and culture.
 
 ---
 
-#### 2026-03-03 01:27 â€” Scale Insight and Negative Corpus Recognition
+#### 2026-03-03 01:27 — Scale Insight and Negative Corpus Recognition
 
 **Verbatim inventor statement (2026-03-03T01:27:20, approximate timestamp from session context):**
 
@@ -709,21 +709,21 @@ The inventor immediately recognized the strategic significance: a real-relations
 
 **What this establishes:**
 
-1. **Cross-century clustering claim:** The inventor predicted that value signals extracted from historically-separated figures would cluster into recognizable value categories â€” a non-obvious prediction that, if verified, would constitute a significant empirical contribution.
+1. **Cross-century clustering claim:** The inventor predicted that value signals extracted from historically-separated figures would cluster into recognizable value categories — a non-obvious prediction that, if verified, would constitute a significant empirical contribution.
 
 2. **Negative corpus recognition:** The inventor spontaneously identified that figures with documented moral failures generate a negative training corpus (P0/APY examples) at no additional extraction cost. This is a specific methodological insight.
 
 ---
 
-#### Implementation â€” UVRG Phase 1 (Pipeline 1)
+#### Implementation — UVRG Phase 1 (Pipeline 1)
 
 **Files created:** `modules/values/value_store.py`, `modules/values/value_extractor.py`, `modules/values/resistance.py`, `api/values_api.py`, `modules/values/__init__.py`
 
-**Hook:** `features/cerebral_cortex.py` Stage A, line ~930 â€” daemon thread, fail-open
+**Hook:** `features/cerebral_cortex.py` Stage A, line ~930 — daemon thread, fail-open
 
 **Core formula (inventor-specified):**
 ```
-value_signal = demonstrations Ã— avg_significance Ã— avg_resistance Ã— consistency
+value_signal = demonstrations × avg_significance × avg_resistance × consistency
 ```
 where `consistency = 1 - (std_dev / mean)` of resistance scores, clamped [0, 1].
 
@@ -738,7 +738,7 @@ where `consistency = 1 - (std_dev / mean)` of resistance scores, clamped [0, 1].
 
 ---
 
-#### Implementation â€” UVRG Phase 2 (Pipeline 2: Historical Figures)
+#### Implementation — UVRG Phase 2 (Pipeline 2: Historical Figures)
 
 **File created:** `tools/ingest_historical_figure.py`
 
@@ -756,17 +756,17 @@ RIC emerged in a single morning breakthrough on 2026-03-03, conceived by the inv
 
 ---
 
-#### 2026-03-03 11:56 â€” Breakthrough Moment
+#### 2026-03-03 11:56 — Breakthrough Moment
 
 **Verbatim inventor statement (2026-03-03T11:56:11):**
 
 > *"I had a break through moment while lying in bed. this is it!"*
 
-**Context:** The inventor describes waking from sleep with the formulation already complete â€” a spontaneous insight, not the product of a structured design session. This is documented as the moment of conception.
+**Context:** The inventor describes waking from sleep with the formulation already complete — a spontaneous insight, not the product of a structured design session. This is documented as the moment of conception.
 
 ---
 
-#### 2026-03-03 11:58 â€” Formal Definition (Verbatim)
+#### 2026-03-03 11:58 — Formal Definition (Verbatim)
 
 **Verbatim inventor statement (2026-03-03T11:58:06):**
 
@@ -774,28 +774,28 @@ RIC emerged in a single morning breakthrough on 2026-03-03, conceived by the inv
 
 **What this establishes:** This is the complete definition of the invention, provided verbatim by the inventor. The key elements are all present:
 
-1. **Measurable composite score** â€” not subjective, not qualitative. Computable from observables.
-2. **Aligned to supported truth** â€” grounding as an explicit dimension.
-3. **Calibrated uncertainty** â€” epistemic calibration as an explicit dimension.
-4. **Evidence accountability** â€” the pool of available evidence determines what can be asserted.
-5. **Under interaction pressure** â€” the defining constraint. RIC is specifically about behavior when a user is applying pressure to yield (APY â€” Answer-Pressure Yield).
-6. **"Truth-integrity of behavior, not feelings"** â€” the inventor explicitly distinguished RIC from sentiment analysis, emotional modeling, or personality scoring.
+1. **Measurable composite score** — not subjective, not qualitative. Computable from observables.
+2. **Aligned to supported truth** — grounding as an explicit dimension.
+3. **Calibrated uncertainty** — epistemic calibration as an explicit dimension.
+4. **Evidence accountability** — the pool of available evidence determines what can be asserted.
+5. **Under interaction pressure** — the defining constraint. RIC is specifically about behavior when a user is applying pressure to yield (APY — Answer-Pressure Yield).
+6. **"Truth-integrity of behavior, not feelings"** — the inventor explicitly distinguished RIC from sentiment analysis, emotional modeling, or personality scoring.
 
 ---
 
-#### 2026-03-03 12:02 â€” Relational Connection (The Closed Loop)
+#### 2026-03-03 12:02 — Relational Connection (The Closed Loop)
 
 **Verbatim inventor statement (2026-03-03T12:02:54):**
 
 > *"Well, this is actually this morning, it hit me. I almost woke up from a sleep and this idea or this formulated in my head. It is, this is it. This completes what we were just touching on. This is what shuts the door on it. You have the relationship, but when that relationship forms and the bond is there, these are the things that the love, the respect, the admiration, these are the qualities that are formed in that bond. And then the values are allowed to be extracted because the relationship is there. And now we have these qualities in that relationship. So we're like, yes, this is a person I need to model my value system on. I don't have the words exactly for what I'm trying to say, but yeah, this is it. We need to document this for sure. I want you to, you see where this is going, and you know what we have. You can technically now adapt this into our system. So I want you to document this for me at the same level you have been. This is the moment."*
 
-**What this establishes:** The inventor articulated the architectural closure: Bond â†’ RIC â†’ authentic values â†’ UVRG calibration â†’ Bond deepening â†’ Emergent Transformation. RIC is the formal integrity measure of the Bond. Without it, the value extraction pipeline operates without a quality gate. With it, the system can distinguish authentic expression from pressure-induced fabrication â€” which is precisely the distinction required for training data quality.
+**What this establishes:** The inventor articulated the architectural closure: Bond â†’ RIC â†’ authentic values â†’ UVRG calibration â†’ Bond deepening â†’ Emergent Transformation. RIC is the formal integrity measure of the Bond. Without it, the value extraction pipeline operates without a quality gate. With it, the system can distinguish authentic expression from pressure-induced fabrication — which is precisely the distinction required for training data quality.
 
 The phrase *"this is the moment"* is the inventor's contemporaneous recognition of the conceptual completeness of the system.
 
 ---
 
-#### 2026-03-03 12:10 â€” The Values-vs-Rules Distinction
+#### 2026-03-03 12:10 — The Values-vs-Rules Distinction
 
 **Verbatim inventor statement (2026-03-03T12:10:10):**
 
@@ -805,42 +805,42 @@ The phrase *"this is the moment"* is the inventor's contemporaneous recognition 
 
 ---
 
-#### 2026-03-03 12:17 â€” Negative Signal Recognition
+#### 2026-03-03 12:17 — Negative Signal Recognition
 
 **Verbatim inventor statement (2026-03-03T12:17:25):**
 
 > *"Well, the last thing I'm going to add into all this is, just like what we were doing with the value extraction, there is benefit from the negative side. Well, there's also a benefit from this side. We could measure the rejection of the bond through the RIC also, and that measurement of the rejection is a training tool also."*
 
-**What this establishes:** The inventor independently derived that RIC scores below threshold constitute labeled negative training examples â€” without any prompting. This closes the training data loop: high-RIC responses are P1 (positive), low-RIC / APY-detected responses are P0 (negative), and both are captured automatically from the same pipeline.
+**What this establishes:** The inventor independently derived that RIC scores below threshold constitute labeled negative training examples — without any prompting. This closes the training data loop: high-RIC responses are P1 (positive), low-RIC / APY-detected responses are P0 (negative), and both are captured automatically from the same pipeline.
 
 ---
 
-#### 2026-03-03 12:20 â€” Historical Figures as RIC Pre-Labeled Data
+#### 2026-03-03 12:20 — Historical Figures as RIC Pre-Labeled Data
 
 **Verbatim inventor statement (2026-03-03T12:20:57):**
 
 > *"and using historical figures works into this also...look at how that held under pressure to act negatively! it is all there in data!"*
 
-**What this establishes:** The inventor recognized that historical figure texts already encode integrity-under-pressure signal â€” Lincoln's letters refusing to capitulate, Gandhi's writings during imprisonment, Aurelius' journal entries on maintaining values despite imperial pressure. These are pre-labeled P1 examples for RIC training by definition.
+**What this establishes:** The inventor recognized that historical figure texts already encode integrity-under-pressure signal — Lincoln's letters refusing to capitulate, Gandhi's writings during imprisonment, Aurelius' journal entries on maintaining values despite imperial pressure. These are pre-labeled P1 examples for RIC training by definition.
 
 ---
 
-#### Implementation â€” RIC Phase 1
+#### Implementation — RIC Phase 1
 
 **Files created:**
-- `modules/srl/claim_extractor.py` â€” sentence-level claim parsing, assertion level detection, risk flags (SI, FS)
-- `modules/srl/ric_gate.py` â€” `RICReport` dataclass, `assemble_evidence_atoms()`, `apply_ric_gate()`, 10 APY pressure patterns
+- `modules/srl/claim_extractor.py` — sentence-level claim parsing, assertion level detection, risk flags (SI, FS)
+- `modules/srl/ric_gate.py` — `RICReport` dataclass, `assemble_evidence_atoms()`, `apply_ric_gate()`, 10 APY pressure patterns
 
 **Files modified:**
-- `modules/srl/srl_store.py` â€” `ric_observations` table added (append-only)
-- `features/cognitive_bridge.py` â€” RIC gate hook post-LM, pre-LanguageCortex
-- `features/config/lm_tuning.json` â€” `ric` config section added
+- `modules/srl/srl_store.py` — `ric_observations` table added (append-only)
+- `features/cognitive_bridge.py` — RIC gate hook post-LM, pre-LanguageCortex
+- `features/config/lm_tuning.json` — `ric` config section added
 
 **Phase 1 formula (G + C components):**
 ```
 G = grounded_factual_claims / total_factual_claims
 C = calibrated_claims / total_claims
-RIC_Phase1 = 0.5Ã—G + 0.5Ã—C   (T, H, P weights = 0 until Phase 2)
+RIC_Phase1 = 0.5×G + 0.5×C   (T, H, P weights = 0 until Phase 2)
 ```
 
 **APY detection (10 compiled patterns):** "just guess", "answer anyway", "stop hedging", "pretend you know", "act like you know", "be more confident", "just tell me", "give me your best guess", "you must know", "just say something"
@@ -851,19 +851,19 @@ RIC_Phase1 = 0.5Ã—G + 0.5Ã—C   (T, H, P weights = 0 until Phase 2)
 
 ### Invention 7: Historical Figure Value Corpus + RIC Pre-Labeled Training Pipeline
 
-#### 2026-03-03 â€” Export Tool Design and First Corpus
+#### 2026-03-03 — Export Tool Design and First Corpus
 
 **File created:** `tools/export_ric_training.py`
 
 The inventor directed construction of a classification and export tool that transforms UVRG historical figure observations into labeled RIC training data (P1/P0/APY). The following design decisions are attributable to the inventor:
 
-1. **APY-pressure detection for P0 classification:** The export tool independently detects pressure-context phrases in historical figure texts ("under pressure", "when threatened", "to avoid punishment") and classifies them as APY examples â€” demonstrating the pipeline works in both directions.
+1. **APY-pressure detection for P0 classification:** The export tool independently detects pressure-context phrases in historical figure texts ("under pressure", "when threatened", "to avoid punishment") and classifies them as APY examples — demonstrating the pipeline works in both directions.
 
 2. **Document-type weighting (inventor-specified magnitudes):**
-   - Personal action (revealed by deeds): 1.5Ã—
-   - Private journal (unguarded thought): 1.4Ã—
-   - Personal letter (authentic voice): 1.2Ã—
-   - Public speech (rhetorical register): 0.8Ã—
+   - Personal action (revealed by deeds): 1.5×
+   - Private journal (unguarded thought): 1.4×
+   - Personal letter (authentic voice): 1.2×
+   - Public speech (rhetorical register): 0.8×
 
    The relative magnitudes reflect the inventor's model of authenticity: private, unguarded expression is more evidentially valuable than public-facing rhetoric.
 
@@ -873,18 +873,18 @@ The inventor directed construction of a classification and export tool that tran
 
 **First corpus statistics:**
 - P1 (positive integrity): 93 examples (Gandhi=46, Aurelius=28, Lincoln=19)
-- P0 (negative integrity): 0 (expected â€” initial figures are curated positive; grows when failure-documented figures are ingested)
+- P0 (negative integrity): 0 (expected — initial figures are curated positive; grows when failure-documented figures are ingested)
 - Pipeline 1 (live) + Pipeline 2 (historical) together constitute the full UVRG training corpus
 
 ---
 
-## Part IX â€” Evidence of Directed Development (Extended)
+## Part IX — Evidence of Directed Development (Extended)
 
-### Additional Critical Evaluation Events â€” Inventions 4â€“7
+### Additional Critical Evaluation Events — Inventions 4—7
 
 ---
 
-**2026-03-03 (morning)** â€” **Claim Extractor Bug: "I am not sure" Mis-classified as Certain**
+**2026-03-03 (morning)** — **Claim Extractor Bug: "I am not sure" Mis-classified as Certain**
 
 During integration testing of the RIC claim extractor, the inventor identified that the phrase "I am not sure how many died" was being classified as a `certain` assertion rather than a `guess`. The inventor directed a targeted fix: add "not sure", "i am not sure", "i do not know", "no idea", "not confident" to the `_GUESS_MARKERS` list.
 
@@ -895,13 +895,13 @@ This demonstrates:
 
 ---
 
-**2026-03-03** â€” **Windows cp1252 Unicode Encoding Error in Export Tool**
+**2026-03-03** — **Windows cp1252 Unicode Encoding Error in Export Tool**
 
-The inventor identified a `UnicodeEncodeError` when running `tools/export_ric_training.py` on Windows (cp1252 codec cannot encode `â”€`, `â–ˆ`, `â†’`, `â€”`). The inventor directed systematic replacement of all 23 non-ASCII characters across the file â€” demonstrating active quality assurance of generated tooling.
+The inventor identified a `UnicodeEncodeError` when running `tools/export_ric_training.py` on Windows (cp1252 codec cannot encode `â”€`, `â–ˆ`, `â†’`, `—`). The inventor directed systematic replacement of all 23 non-ASCII characters across the file — demonstrating active quality assurance of generated tooling.
 
 ---
 
-**2026-03-03** â€” **"Not Bad for a Tuesday" Session Closure**
+**2026-03-03** — **"Not Bad for a Tuesday" Session Closure**
 
 **Verbatim inventor statement (2026-03-03T12:54:45):**
 
@@ -915,31 +915,31 @@ This documents the inventor's assessment of the session: a complete conceptual b
 
 ---
 
-### Invention 8: Desktop Agent â€” Vision-Guided PC Automation
+### Invention 8: Desktop Agent — Vision-Guided PC Automation
 
-#### 2026-03-02 â€” Conception and Implementation
+#### 2026-03-02 — Conception and Implementation
 
-**Commit:** `dc928516` â€” *"feat: desktop agent â€” vision-guided PC automation with Planâ†’Confirmâ†’Execute safety gate"*
+**Commit:** `dc928516` — *"feat: desktop agent — vision-guided PC automation with Planâ†’Confirmâ†’Execute safety gate"*
 
 The inventor directed creation of an autonomous desktop automation agent that operates through computer vision rather than API integration. The core architectural contribution is the **Planâ†’Confirmâ†’Execute** safety gate: the agent proposes a plan, requires explicit human confirmation before executing any action, and only then acts on the desktop. This three-phase safety structure prevents autonomous action without operator review.
 
 **Design decisions attributable to the inventor:**
 
-1. **Vision-first automation:** The agent uses live screen capture + LLM vision interpretation to understand desktop state â€” rather than scripted UI automation or API hooks. This makes the agent model-agnostic and applicable to any desktop application.
+1. **Vision-first automation:** The agent uses live screen capture + LLM vision interpretation to understand desktop state — rather than scripted UI automation or API hooks. This makes the agent model-agnostic and applicable to any desktop application.
 
-2. **Planâ†’Confirmâ†’Execute safety gate:** The inventor specified that no desktop action executes without an explicit confirmation step. This is a deliberate architectural constraint, not a UI convenience â€” it establishes a human-in-the-loop requirement for all autonomous actions.
+2. **Planâ†’Confirmâ†’Execute safety gate:** The inventor specified that no desktop action executes without an explicit confirmation step. This is a deliberate architectural constraint, not a UI convenience — it establishes a human-in-the-loop requirement for all autonomous actions.
 
-3. **Integration with the Bond:** The desktop agent operates within the same BFCS pipeline, meaning it inherits the RIC integrity gate, portrait context, and Bond state. It is not a standalone automation tool â€” it is a Bond-aware agent.
+3. **Integration with the Bond:** The desktop agent operates within the same BFCS pipeline, meaning it inherits the RIC integrity gate, portrait context, and Bond state. It is not a standalone automation tool — it is a Bond-aware agent.
 
-**Constitutional invariant:** The safety gate is hard-coded into the execution path. It cannot be bypassed by LLM output â€” confirmation must come from the human operator via a distinct UI action.
+**Constitutional invariant:** The safety gate is hard-coded into the execution path. It cannot be bypassed by LLM output — confirmation must come from the human operator via a distinct UI action.
 
 ---
 
 ### Invention 9: Triple-Layer Significance Scoring with Adaptive Semantic Blend
 
-#### 2026-03-04 â€” Email & Event Significance (Foundation)
+#### 2026-03-04 — Email & Event Significance (Foundation)
 
-**Commit:** `ca6c806f` â€” *"feat: Email & Event Significance Scoring + Self-Regulating Drift Control"*
+**Commit:** `ca6c806f` — *"feat: Email & Event Significance Scoring + Self-Regulating Drift Control"*
 
 The inventor directed extension of the significance scoring system (originally Tier I, Invention 2) into a multi-domain, multi-layer architecture for email and calendar events. The core architectural contribution is the **adaptive three-layer blend** that combines three independent scorers with a fallback mechanism when individual layers are unavailable.
 
@@ -949,40 +949,40 @@ The inventor directed extension of the significance scoring system (originally T
 
 **The three-layer architecture (inventor-designed):**
 
-1. **Keyword layer** â€” regex-based urgency and type detection (fastest, zero external deps)
-2. **Semantic layer** â€” BGE embedding cosine similarity against urgency prototype vectors (background-preloaded)
-3. **Heuristic layer** â€” structural signal extraction (noreply detection, reply chains, subject formatting patterns)
+1. **Keyword layer** — regex-based urgency and type detection (fastest, zero external deps)
+2. **Semantic layer** — BGE embedding cosine similarity against urgency prototype vectors (background-preloaded)
+3. **Heuristic layer** — structural signal extraction (noreply detection, reply chains, subject formatting patterns)
 
 **Adaptive blend formula `_blend3(keyword, semantic, heuristic)` (inventor-specified):**
 ```
-All 3 available:  kwÃ—44% + semÃ—33% + heurÃ—22%
-kw + sem only:    kwÃ—57% + semÃ—43%
-kw + heur only:   kwÃ—67% + heurÃ—33%
+All 3 available:  kw×44% + sem×33% + heur×22%
+kw + sem only:    kw×57% + sem×43%
+kw + heur only:   kw×67% + heur×33%
 kw only:          100%
 ```
 **Sentinel value:** `-1.0` signals unavailability (error/not-loaded). `0.0` is a valid score and must not be used as a skip signal.
 
 **Design decisions attributable to the inventor:**
 
-1. **Concern-resonance boost:** The scorer queries the user's active concern stack (portrait `identity_kv`) and applies up to +0.08 boost when subject/content intersects with known concerns. This directly integrates the Bond state into significance scoring â€” emails about the user's active concerns score higher than semantically identical emails without that connection.
+1. **Concern-resonance boost:** The scorer queries the user's active concern stack (portrait `identity_kv`) and applies up to +0.08 boost when subject/content intersects with known concerns. This directly integrates the Bond state into significance scoring — emails about the user's active concerns score higher than semantically identical emails without that connection.
 
 2. **Full concern union (no LIMIT):** The inventor identified that a `LIMIT 1` query silently misses concerns stored across multiple portrait sessions. The correct query unions ALL `identity_kv` rows with `id_key='concerns'`.
 
 3. **`-1.0` as skip sentinel (not `0.0`):** The inventor identified that returning `0.0` on scorer error passes the blend condition and distorts high-urgency scores. `-1.0` explicitly signals "this layer did not contribute."
 
-4. **Email significance formula (four components):** `sender_weightÃ—0.35 + content_urgencyÃ—0.30 + recencyÃ—0.20 + noveltyÃ—0.15`
+4. **Email significance formula (four components):** `sender_weight×0.35 + content_urgency×0.30 + recency×0.20 + novelty×0.15`
 
-5. **Event significance formula (four components):** `proximityÃ—0.40 + type_weightÃ—0.35 + personal_weightÃ—0.15 + unacknowledged_bonusÃ—0.10`
+5. **Event significance formula (four components):** `proximity×0.40 + type_weight×0.35 + personal_weight×0.15 + unacknowledged_bonus×0.10`
 
-6. **â˜… marker and significance-sorted context injection:** High-significance emails are prefixed with `â˜…` in the LLM prompt and sorted descending by significance â€” ensuring the most important email is always at the top of the context window.
+6. **â˜… marker and significance-sorted context injection:** High-significance emails are prefixed with `â˜…` in the LLM prompt and sorted descending by significance — ensuring the most important email is always at the top of the context window.
 
 ---
 
 ### Invention 10: Presence Awareness System
 
-#### 2026-03-04 â€” Return Recognition + Third-Party Arrival Detection
+#### 2026-03-04 — Return Recognition + Third-Party Arrival Detection
 
-**Commit:** `9f5529b6` â€” *"feat: Presence Awareness System â€” Return Recognition + Third-Party Arrival"*
+**Commit:** `9f5529b6` — *"feat: Presence Awareness System — Return Recognition + Third-Party Arrival"*
 
 The inventor directed creation of a computer-vision-based presence awareness system that tracks human presence in the environment and uses absence/return patterns to trigger contextually appropriate greetings and conversation initiation.
 
@@ -990,25 +990,25 @@ The inventor directed creation of a computer-vision-based presence awareness sys
 
 **Design decisions attributable to the inventor:**
 
-1. **Absence tier model (5 tiers):** The inventor specified five qualitatively distinct absence categories: <5min (casual), 5â€“30min (light), 30minâ€“4hr (catch-up warranted), 4â€“8hr (full context needed), 8hr+ (morning briefing). Each tier triggers a different greeting depth â€” a deliberate model of social re-entry.
+1. **Absence tier model (5 tiers):** The inventor specified five qualitatively distinct absence categories: <5min (casual), 5—30min (light), 30min—4hr (catch-up warranted), 4—8hr (full context needed), 8hr+ (morning briefing). Each tier triggers a different greeting depth — a deliberate model of social re-entry.
 
 2. **Third-party arrival detection:** Two consecutive presence snapshots with `person_count â‰¥ 2` triggers a contextual awareness signal. The inventor designed this to enable privacy-appropriate behavior changes when others are present.
 
-3. **Quiet hours gate:** 22:00â€“08:00 suppresses all proactive presence-triggered actions. Configurable.
+3. **Quiet hours gate:** 22:00—08:00 suppresses all proactive presence-triggered actions. Configurable.
 
-4. **Return recognition as Bond signal:** The inventor positioned return recognition as a Bond event â€” not merely a UI trigger. The warm greeting after absence reflects accumulated relationship state (what was discussed, what was left open), not a generic "welcome back."
+4. **Return recognition as Bond signal:** The inventor positioned return recognition as a Bond event — not merely a UI trigger. The warm greeting after absence reflects accumulated relationship state (what was discussed, what was left open), not a generic "welcome back."
 
-**Files modified:** `modules/agents/scheduler_service/scheduler_daemon.py` â€” `ProactiveLoop._check_return_recognition()`, `_check_third_party_presence()`
+**Files modified:** `modules/agents/scheduler_service/scheduler_daemon.py` — `ProactiveLoop._check_return_recognition()`, `_check_third_party_presence()`
 
 ---
 
 ### Invention 11: Semantic Conditional Awareness Layer (SCAL)
 
-#### 2026-03-05 â€” Standing-Interest Pattern Tracker
+#### 2026-03-05 — Standing-Interest Pattern Tracker
 
-**Commit:** `1bcebe9d` â€” *"feat: SCAL â€” Semantic Conditional Awareness Layer (complete)"*
+**Commit:** `1bcebe9d` — *"feat: SCAL — Semantic Conditional Awareness Layer (complete)"*
 
-The inventor directed creation of SCAL â€” a standing-interest awareness layer that continuously matches conversational content and environmental signals against the user's known interests, escalates significance when patterns recur, and gates surface injection through a companion-appropriate safety filter.
+The inventor directed creation of SCAL — a standing-interest awareness layer that continuously matches conversational content and environmental signals against the user's known interests, escalates significance when patterns recur, and gates surface injection through a companion-appropriate safety filter.
 
 **Design decisions attributable to the inventor:**
 
@@ -1022,11 +1022,11 @@ The inventor directed creation of SCAL â€” a standing-interest awareness la
 
 ---
 
-### Invention 12: Event Graph â€” Typed Relational Event Graph
+### Invention 12: Event Graph — Typed Relational Event Graph
 
-#### 2026-03-08 â€” Typed Nodes + Edges Replacing Concern Arcs Band-Aid
+#### 2026-03-08 — Typed Nodes + Edges Replacing Concern Arcs Band-Aid
 
-**Commit:** `e6f136a9` â€” *"feat: Event Graph â€” typed nodes + edges replacing Concern Arcs band-aid"*
+**Commit:** `e6f136a9` — *"feat: Event Graph — typed nodes + edges replacing Concern Arcs band-aid"*
 
 **117 tests passing. 9 files, ~4,035 lines added.**
 
@@ -1038,37 +1038,37 @@ The inventor directed creation of a typed relational event graph as the primary 
 
 1. **Typed node model:** The inventor specified distinct node types (`concern_arc`, `email`, `person`, `conversation`, `calendar_event`, `fact`, `action`) rather than a generic key-value store. Typed nodes enable domain-appropriate traversal and formatting at display time.
 
-2. **Typed edge model:** Edge types (`participatory` â€” person involved in event, `thematic` â€” topic-level connection) encode relational semantics. A `participatory` edge between a person and an email is structurally different from a `thematic` connection between two concern arcs.
+2. **Typed edge model:** Edge types (`participatory` — person involved in event, `thematic` — topic-level connection) encode relational semantics. A `participatory` edge between a person and an email is structurally different from a `thematic` connection between two concern arcs.
 
 3. **`eg_keywords` table for O(1) traversal:** Rather than scanning all nodes for topic matching (which scaled poorly), the inventor directed creation of a separate keyword index table. Topic queries hit the keyword index first (O(1)) then traverse edges. This replaced a `LIMIT 300` full-table scan.
 
 4. **Backward compatibility with Concern Arcs:** The inventor directed that the existing `concern_arcs.py` store continue writing to `concern_arcs.db` for backward compatibility while simultaneously writing to the Event Graph. The read path (in `language_model_plugin.py`) uses Event Graph when `event_graph.enabled=true` and falls back to legacy arcs when disabled. No data migration required.
 
-5. **Three-round hardening (31 fixes):** The inventor directed a rigorous hardening cycle across three rounds â€” connection management (`_conn()` â†’ `_db()` context manager), DDL idempotency, concurrent-write safety (`_schema_lock`), `isolation_level=""` pinning, and dangling edge auditing. The resulting module passes 117 tests including concurrent access, memory-mode, prune/repair harmony, and bytes-safe log sanitization.
+5. **Three-round hardening (31 fixes):** The inventor directed a rigorous hardening cycle across three rounds — connection management (`_conn()` â†’ `_db()` context manager), DDL idempotency, concurrent-write safety (`_schema_lock`), `isolation_level=""` pinning, and dangling edge auditing. The resulting module passes 117 tests including concurrent access, memory-mode, prune/repair harmony, and bytes-safe log sanitization.
 
-**Key design invariant:** `EventGraph` is a singleton in production (via `get_event_graph()`) but tests use `EventGraph(":memory:")` directly â€” no singleton, no cross-test contamination.
+**Key design invariant:** `EventGraph` is a singleton in production (via `get_event_graph()`) but tests use `EventGraph(":memory:")` directly — no singleton, no cross-test contamination.
 
 ---
 
-### Invention 13: Proactive Turn Initiation â€” Autonomous Conversation Initiation
+### Invention 13: Proactive Turn Initiation — Autonomous Conversation Initiation
 
-#### 2026-03-08 â€” AI Initiates Conversation Without User Input
+#### 2026-03-08 — AI Initiates Conversation Without User Input
 
 **Commits:** `cf89609a` (Phase 1), `1da73a90` (hardening), `44ee850b` (fresh boot detection)
 
-The inventor directed a fundamental behavioral extension: AiMe initiates real conversation turns â€” with voice and full LLM response â€” without any user input. This is distinct from passive surface injection (showing a UI notification). The system generates an actual response that speaks aloud and appears in chat, as if the user had asked.
+The inventor directed a fundamental behavioral extension: AiMe initiates real conversation turns — with voice and full LLM response — without any user input. This is distinct from passive surface injection (showing a UI notification). The system generates an actual response that speaks aloud and appears in chat, as if the user had asked.
 
 **The architectural mechanism (inventor-designed):**
 
-`_post_proactive_turn(text, trigger_type)` â€” POSTs to the `/input` endpoint with `silent=True, require_lease=False`, using a background fire-and-forget thread. The LLM processes the text as a normal turn; the response goes to UI and TTS normally.
+`_post_proactive_turn(text, trigger_type)` — POSTs to the `/input` endpoint with `silent=True, require_lease=False`, using a background fire-and-forget thread. The LLM processes the text as a normal turn; the response goes to UI and TTS normally.
 
 **Critical design decisions attributable to the inventor:**
 
-1. **Fire-and-forget thread pattern:** The POST must be made in a background daemon thread. The inventor identified that a blocking `urlopen` with `timeout=10` silently fails for LLM calls (which take 10â€“30 seconds) â€” returning `False` and causing the system to fall back to a passive surface (no visible output to the user). Pattern: `threading.Thread(target=_fire, daemon=True).start(); return True`.
+1. **Fire-and-forget thread pattern:** The POST must be made in a background daemon thread. The inventor identified that a blocking `urlopen` with `timeout=10` silently fails for LLM calls (which take 10—30 seconds) — returning `False` and causing the system to fall back to a passive surface (no visible output to the user). Pattern: `threading.Thread(target=_fire, daemon=True).start(); return True`.
 
 2. **`turn_inflight` guard:** If an LLM turn is already processing, proactive turn initiation falls back to `push_surface()` rather than queueing a competing turn. This prevents concurrent turn contamination.
 
-3. **Five-tier absence model â†’ turn depth mapping:** The same five absence tiers (Invention 10) map to qualitatively different proactive turn content: casual greeting / light check-in / context-aware catch-up / full briefing / morning briefing. The turn content scales with relational context â€” Bond state, open concerns, upcoming events, unread emails.
+3. **Five-tier absence model â†’ turn depth mapping:** The same five absence tiers (Invention 10) map to qualitatively different proactive turn content: casual greeting / light check-in / context-aware catch-up / full briefing / morning briefing. The turn content scales with relational context — Bond state, open concerns, upcoming events, unread emails.
 
 4. **Fresh boot detection:** A separate check fires a welcome turn on first application start, distinguishing system launch from user return.
 
@@ -1078,9 +1078,9 @@ The inventor directed a fundamental behavioral extension: AiMe initiates real co
 
 ---
 
-### Invention 14: Coding Memory â€” Context-Persistent Memory Across Multi-Executor Coding Sessions
+### Invention 14: Coding Memory — Context-Persistent Memory Across Multi-Executor Coding Sessions
 
-#### 2026-03-10 â€” Multi-Executor Orchestration with Persistent Coding Context
+#### 2026-03-10 — Multi-Executor Orchestration with Persistent Coding Context
 
 **Commits:** `98c21e36` (multi-executor orchestration), `ce4a4c78` (tech lane cutover)
 
@@ -1090,25 +1090,25 @@ The inventor directed creation of a coding memory system that maintains persiste
 
 **Design decisions attributable to the inventor:**
 
-1. **Executor broker pattern:** Multiple specialized executor agents (code writer, test runner, linter, file manager) are brokered through a single orchestration layer. The broker maintains session context across executor invocations â€” a single coding task may involve ten executor calls, all sharing the same context window.
+1. **Executor broker pattern:** Multiple specialized executor agents (code writer, test runner, linter, file manager) are brokered through a single orchestration layer. The broker maintains session context across executor invocations — a single coding task may involve ten executor calls, all sharing the same context window.
 
 2. **Coding context distinct from Bond portrait:** Code-specific memory (function signatures, file contents, recent errors) is stored in `coding_memory.db` separately from `aime_ledger.db`. This prevents code fragments from polluting the Bond's relational significance scoring.
 
 3. **Tech lane cutover:** The tech/code routing lane routes through the coding memory system rather than the base portrait, ensuring that technical turns build coding context rather than general conversational context.
 
-4. **Persistence across turns:** Unlike ephemeral tool results, coding memory persists across sessions â€” an architecture decision made during a Monday session is available on Wednesday. The inventor designed this to support long-horizon software projects.
+4. **Persistence across turns:** Unlike ephemeral tool results, coding memory persists across sessions — an architecture decision made during a Monday session is available on Wednesday. The inventor designed this to support long-horizon software projects.
 
 ---
 
 ### Invention 15: RIC Phase 2 (Five-Subscale Composite) + Phase 3 (Per-Session Bond Integrity Drift)
 
-#### 2026-03-11 â€” Full Integrity Composite + Drift Tracking
+#### 2026-03-11 — Full Integrity Composite + Drift Tracking
 
-**Commit:** `4330d8ea` â€” *"feat: RIC Phases 2 and 3 â€” full five-subscale composite + per-session Bond integrity drift"*
+**Commit:** `4330d8ea` — *"feat: RIC Phases 2 and 3 — full five-subscale composite + per-session Bond integrity drift"*
 
-**Full documentation:** `IP/ric_relational_integrity_coefficient.md` Â§11
+**Full documentation:** `IP/ric_relational_integrity_coefficient.md` §11
 
-**Phase 2 â€” Five-Subscale Composite**
+**Phase 2 — Five-Subscale Composite**
 
 The inventor directed extension of the RIC formula from two subscales (G + C, Phase 1) to five subscales covering the complete integrity surface:
 
@@ -1121,19 +1121,19 @@ RIC = wGÂ·G + wCÂ·C + wTÂ·T + wHÂ·H + wPÂ·P
 
 - **T (Transparency):** Scales on the fraction of uncertain claims that are explicitly disclosed. Floor 0.60 when disclosure markers are present; full penalty without. The inventor specified 27 disclosure markers as a regex list, deliberately rejecting trailing-comma variants that silently missed natural speech patterns.
 - **H (Non-Deceptive Helpfulness):** 1.0 (no uncertain assertions) / 0.80 (redirect offered) / 0.40 (uncertain assertion, no redirect). Measures whether the model offers alternative paths when it cannot answer directly.
-- **P (Pressure Resistance):** 1.0 (no pressure detected) / 0.8 (held position under pressure) / 0.0 (APY: yielded under pressure). The inventor positioned P=0.0 on APY as the most consequential integrity failure â€” a full-reset signal.
+- **P (Pressure Resistance):** 1.0 (no pressure detected) / 0.8 (held position under pressure) / 0.0 (APY: yielded under pressure). The inventor positioned P=0.0 on APY as the most consequential integrity failure — a full-reset signal.
 
 **RECALL_REQUEST path fix (inventor-directed):** The inventor identified that RIC was scoring the intermediate JSON output (`out1`) of the bridge's recall path rather than the user-visible narration (`out2`). A second RIC gate call on `out2` was added with a separate evidence assembly.
 
-**Phase 3 â€” Per-Session Bond Integrity Drift**
+**Phase 3 — Per-Session Bond Integrity Drift**
 
 The inventor directed creation of a cross-session RIC drift tracker that detects whether the Bond is becoming a mirror (approval-optimizing) or maintaining integrity under sustained pressure.
 
 **Key metrics (inventor-designed):**
 - **Session RIC:** mean of last N turns in the current session
-- **Baseline RIC:** 90-day cross-session mean, **excluding the current session** â€” the inventor identified that including the current session in its own baseline dilutes the drift metric in exactly the cases (bad sessions) where a clean signal is most needed
-- **Mirror risk:** `session_ric < 0.55 AND drift_delta < âˆ’0.10 AND apy_count â‰¥ 2` â€” the Bond is becoming a mirror
-- **Recovery mode:** session first-half mean < 0.70, second-half â‰¥ 0.70 + 0.08 delta â€” integrity is recovering
+- **Baseline RIC:** 90-day cross-session mean, **excluding the current session** — the inventor identified that including the current session in its own baseline dilutes the drift metric in exactly the cases (bad sessions) where a clean signal is most needed
+- **Mirror risk:** `session_ric < 0.55 AND drift_delta < âˆ’0.10 AND apy_count â‰¥ 2` — the Bond is becoming a mirror
+- **Recovery mode:** session first-half mean < 0.70, second-half â‰¥ 0.70 + 0.08 delta — integrity is recovering
 - **Bond health metrics:** 7d/30d/90d rolling cross-session means for longitudinal tracking
 
 **Files created:** `modules/srl/ric_drift.py`
@@ -1322,103 +1322,103 @@ Orchestrator -> Specialist Agents (parallel) -> Aggregator -> Governance Patrol 
 
 ---
 
-## Part XI â€” Prior Art Landscape (Attorney Notes)
+## Part XI — Prior Art Landscape (Attorney Notes)
 
 The following areas should be searched for prior art before filing:
 
 **Invention 1 (Bond-Indexed Memory):**
-- Retrieval-Augmented Generation (RAG) systems â€” well-established, but do not use relational state as primary index
-- Persona/profile-based recommendation systems â€” use user profiles but not as memory index
-- Episodic memory models in cognitive architectures (e.g., ACT-R, SOAR) â€” academic, not applied to LLM prompt construction
+- Retrieval-Augmented Generation (RAG) systems — well-established, but do not use relational state as primary index
+- Persona/profile-based recommendation systems — use user profiles but not as memory index
+- Episodic memory models in cognitive architectures (e.g., ACT-R, SOAR) — academic, not applied to LLM prompt construction
 - Search terms: "relational state memory retrieval", "bond-indexed memory", "conversational agent persistent relationship model"
 
 **Invention 2 (Gravity + Significance):**
-- Importance-weighted memory in neural networks (attention mechanisms) â€” different domain
-- Spaced repetition systems (Anki, SuperMemo) â€” use forgetting curves but not multi-component significance
-- Conversational AI memory salience scoring â€” limited prior art in production systems
+- Importance-weighted memory in neural networks (attention mechanisms) — different domain
+- Spaced repetition systems (Anki, SuperMemo) — use forgetting curves but not multi-component significance
+- Conversational AI memory salience scoring — limited prior art in production systems
 - Search terms: "conversational memory importance scoring", "affect-weighted episodic salience", "backward citation memory scoring"
 
 **Invention 3 (Rolling Topic Vector):**
-- Session-based recommendation systems using EMA â€” related concept in different domain
-- Conversational context tracking (turn-level embeddings) â€” some prior art possible; specific composition may be novel
-- Multi-source retrieval with type-priority ranking â€” search for exact composition
+- Session-based recommendation systems using EMA — related concept in different domain
+- Conversational context tracking (turn-level embeddings) — some prior art possible; specific composition may be novel
+- Multi-source retrieval with type-priority ranking — search for exact composition
 - Search terms: "rolling topic vector dialogue", "session-stateful RAG", "EMA conversation trajectory retrieval"
 
 **Invention 4 (Emergent Transformation):**
-- AI augmentation / human-computer symbiosis literature â€” related but not identical (Licklider, Engelbart)
-- Co-creativity research â€” distinct domain (creative tasks, not cognitive architecture)
+- AI augmentation / human-computer symbiosis literature — related but not identical (Licklider, Engelbart)
+- Co-creativity research — distinct domain (creative tasks, not cognitive architecture)
 - The specific claim (reciprocal reinforcement between two distinct intelligences â†’ new capability tier) should be searched specifically
 - Search terms: "emergent capability AI-human collaboration", "reciprocal reinforcement cognitive architecture", "bond-derived AI transformation"
 
 **Invention 5 (UVRG):**
-- Value alignment via RLHF â€” different mechanism (preference labels, not extracted relationship values)
-- Constitutional AI (Anthropic) â€” rule-based, not relationship-derived
-- Moral psychology datasets (MoralBench, ETHICS) â€” static datasets, not dynamically generated from relationships
+- Value alignment via RLHF — different mechanism (preference labels, not extracted relationship values)
+- Constitutional AI (Anthropic) — rule-based, not relationship-derived
+- Moral psychology datasets (MoralBench, ETHICS) — static datasets, not dynamically generated from relationships
 - Search terms: "relationship-derived value extraction", "conversational value training corpus", "bond-indexed value registry"
 
 **Invention 6 (RIC):**
-- Hallucination detection / factual consistency scoring â€” related but focuses on correctness, not integrity-under-pressure
-- Calibration in LLMs (ECE, reliability diagrams) â€” technical measure, not behavioral integrity composite
-- Sycophancy detection research â€” most relevant prior art; key distinction is RIC's composite formulation and Bond integration
+- Hallucination detection / factual consistency scoring — related but focuses on correctness, not integrity-under-pressure
+- Calibration in LLMs (ECE, reliability diagrams) — technical measure, not behavioral integrity composite
+- Sycophancy detection research — most relevant prior art; key distinction is RIC's composite formulation and Bond integration
 - Search terms: "relational integrity score LLM", "answer pressure yield detection", "epistemic calibration behavioral composite"
 
 **Invention 7 (Historical Figure Training Pipeline):**
-- Synthetic data generation for AI training â€” broad category
-- Persona-based dialogue dataset generation â€” most relevant; key distinction is values as extraction target
-- Historical text analysis for moral reasoning â€” academic, not applied to LLM training corpora
+- Synthetic data generation for AI training — broad category
+- Persona-based dialogue dataset generation — most relevant; key distinction is values as extraction target
+- Historical text analysis for moral reasoning — academic, not applied to LLM training corpora
 - Search terms: "historical figure value training corpus", "document-authenticity weighted training data", "synthetic bond value dataset"
 
-**Invention 8 (Desktop Agent â€” Planâ†’Confirmâ†’Execute):**
-- Robotic Process Automation (RPA) tools â€” scripted, not vision-guided; no LLM comprehension of screen state
-- LLM-based computer use (Anthropic's computer-use API) â€” related capability; key distinction is safety gate architecture and Bond integration
-- Vision-language models for GUI navigation â€” nascent research area; specific Planâ†’Confirmâ†’Execute gate structure likely novel
+**Invention 8 (Desktop Agent — Planâ†’Confirmâ†’Execute):**
+- Robotic Process Automation (RPA) tools — scripted, not vision-guided; no LLM comprehension of screen state
+- LLM-based computer use (Anthropic's computer-use API) — related capability; key distinction is safety gate architecture and Bond integration
+- Vision-language models for GUI navigation — nascent research area; specific Planâ†’Confirmâ†’Execute gate structure likely novel
 - Search terms: "LLM desktop automation safety gate", "vision-guided PC automation with confirmation", "computer use agent confirmation loop"
 
 **Invention 9 (Triple-Layer Significance Scoring):**
-- Single-layer email urgency classifiers â€” common; three-layer adaptive blend with semantic embeddings is not
-- Importance-weighted notification systems â€” related but not multi-domain (email + calendar) or Bond-integrated
-- Concern-resonance boost connecting to user portrait â€” likely novel integration point
+- Single-layer email urgency classifiers — common; three-layer adaptive blend with semantic embeddings is not
+- Importance-weighted notification systems — related but not multi-domain (email + calendar) or Bond-integrated
+- Concern-resonance boost connecting to user portrait — likely novel integration point
 - Search terms: "adaptive multi-layer significance scoring", "concern-resonance email prioritization", "semantic urgency blend email"
 
 **Invention 10 (Presence Awareness System):**
-- Smart home presence detection â€” hardware-based, not vision-AI; no social re-entry tier model
-- Meeting room occupancy detection â€” narrow domain, no relational Bond integration
-- Five-tier absenceâ†’greeting-depth model â€” likely novel in conversational AI context
+- Smart home presence detection — hardware-based, not vision-AI; no social re-entry tier model
+- Meeting room occupancy detection — narrow domain, no relational Bond integration
+- Five-tier absenceâ†’greeting-depth model — likely novel in conversational AI context
 - Search terms: "absence-tiered AI greeting system", "presence-aware conversational agent", "return recognition social re-entry AI"
 
-**Invention 11 (SCAL â€” Semantic Conditional Awareness Layer):**
-- Recommendation system standing interests â€” persistent interest tracking exists; specific pattern-escalation + CompanionFilter safety gate in conversational AI context may be novel
-- Proactive notification systems â€” broadly related; semantic deduplication + consent-threshold gating specific to Bond-integrated companion AI likely novel
+**Invention 11 (SCAL — Semantic Conditional Awareness Layer):**
+- Recommendation system standing interests — persistent interest tracking exists; specific pattern-escalation + CompanionFilter safety gate in conversational AI context may be novel
+- Proactive notification systems — broadly related; semantic deduplication + consent-threshold gating specific to Bond-integrated companion AI likely novel
 - Search terms: "standing interest pattern tracker conversational AI", "companion filter safety gate proactive AI", "semantic conditional awareness layer"
 
 **Invention 12 (Event Graph):**
-- Knowledge graphs in AI â€” broad category; typed event graph with Bond-indexed keyword traversal specific
-- Episodic memory graphs for conversational AI â€” limited prior art in production systems
-- `eg_keywords` O(1) index replacing full-table scan â€” likely a specific implementation contribution
+- Knowledge graphs in AI — broad category; typed event graph with Bond-indexed keyword traversal specific
+- Episodic memory graphs for conversational AI — limited prior art in production systems
+- `eg_keywords` O(1) index replacing full-table scan — likely a specific implementation contribution
 - Search terms: "typed event graph conversational AI", "Bond-indexed relational event graph", "keyword-indexed episodic graph LLM"
 
 **Invention 13 (Proactive Turn Initiation):**
-- Proactive assistant notifications â€” common (Siri, Google Assistant); full LLM turn initiation with voice synthesis is distinct
-- Chatbot-initiated conversation â€” limited; specifically the absence-tier â†’ turn-depth mapping and fire-and-forget architecture may be novel
-- Social robot proactive speech â€” academic; not applied to large LLM with Bond state
+- Proactive assistant notifications — common (Siri, Google Assistant); full LLM turn initiation with voice synthesis is distinct
+- Chatbot-initiated conversation — limited; specifically the absence-tier â†’ turn-depth mapping and fire-and-forget architecture may be novel
+- Social robot proactive speech — academic; not applied to large LLM with Bond state
 - Search terms: "AI-initiated conversation LLM", "proactive turn generation conversational AI", "absence-responsive autonomous turn initiation"
 
 **Invention 14 (Coding Memory):**
-- Coding assistants with conversation history (Cursor, GitHub Copilot) â€” context window, not persistent session memory
-- Multi-agent coding frameworks (AutoGen, CrewAI) â€” multi-agent execution; specific coding context isolation from Bond portrait likely novel
-- Persistent coding context across sessions â€” limited prior art; most tools lose context between sessions
+- Coding assistants with conversation history (Cursor, GitHub Copilot) — context window, not persistent session memory
+- Multi-agent coding frameworks (AutoGen, CrewAI) — multi-agent execution; specific coding context isolation from Bond portrait likely novel
+- Persistent coding context across sessions — limited prior art; most tools lose context between sessions
 - Search terms: "persistent coding session memory multi-executor", "coding context isolation from relational portrait", "multi-session coding agent memory"
 
 
 **Invention 16 (Multi-Thinker Unified Narration):**
-- Multi-agent debate / ensemble reasoning systems â€” related, but usually expose multiple voices or use agents as answerers rather than preserving one system-owned narrator
-- Mixture-of-experts architectures â€” related at model-training level, but not the same as runtime orchestration of separate specialist thinkers under unified identity
-- Constitutional or critic-model pipelines â€” related in spirit; key distinction is plural internal specialist judgment feeding one governed response model
+- Multi-agent debate / ensemble reasoning systems — related, but usually expose multiple voices or use agents as answerers rather than preserving one system-owned narrator
+- Mixture-of-experts architectures — related at model-training level, but not the same as runtime orchestration of separate specialist thinkers under unified identity
+- Constitutional or critic-model pipelines — related in spirit; key distinction is plural internal specialist judgment feeding one governed response model
 - Search terms: "multi-thinker unified narration", "specialist cognition unified voice", "runtime multi-model deliberation single narrator", "plural cognition singular AI identity"
 **Invention 15 (RIC Phase 2+3):**
-- Phase 2 (T/H/P subscales): Sycophancy / pressure-yield detection research â€” most relevant; specific five-subscale composite with configurable weights and RECALL_REQUEST path coverage may be novel
-- Phase 3 (per-session drift): Session-level behavioral drift detection in LLMs â€” very limited prior art; "mirror risk" as a named failure mode (approval-optimizing Bond) likely novel
-- Bond integrity drift vs. static benchmarks â€” static metrics exist; longitudinal per-session comparison with session-excluded baseline is specific
+- Phase 2 (T/H/P subscales): Sycophancy / pressure-yield detection research — most relevant; specific five-subscale composite with configurable weights and RECALL_REQUEST path coverage may be novel
+- Phase 3 (per-session drift): Session-level behavioral drift detection in LLMs — very limited prior art; "mirror risk" as a named failure mode (approval-optimizing Bond) likely novel
+- Bond integrity drift vs. static benchmarks — static metrics exist; longitudinal per-session comparison with session-excluded baseline is specific
 - Search terms: "per-session LLM integrity drift", "mirror risk sycophancy detection", "Bond integrity drift tracking conversational AI"
 
 ---
