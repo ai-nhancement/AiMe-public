@@ -8,15 +8,15 @@
 
 ## What Is AiMe?
 
-AiMe is a personal cognitive architecture that treats AI models as subordinate narrators inside a governed runtime — not as the product itself.
+AiMe is a personal cognitive architecture that treats AI models as subordinate narrators inside a governed runtime -- not as the product itself.
 
 Most AI assistants today share the same structural weakness: the model is the center of everything. The conversation ends, the state disappears, and the next session starts from scratch. Memory features are retrieval tricks bolted on after the fact. The model is expected to remember, reason, decide, stay truthful, maintain continuity, and somehow remain stable across long stretches of use. That is too much to ask from the wrong layer.
 
 AiMe is built from the opposite premise. The system owns memory, identity, execution, initiative, and governance. Models are interchangeable reasoning engines inside that system. If the model is swapped, the relationship persists. If the conversation ends, the continuity does not.
 
-The result is a companion system that knows who you are, what matters to you, what is open, and what should be surfaced at the right moment — across weeks and months, not just sessions.
+The result is a companion system that knows who you are, what matters to you, what is open, and what should be surfaced at the right moment -- across weeks and months, not just sessions.
 
-**AiMe has been running daily since November 2025, built entirely by a single developer.**
+**AiMe has been running daily since November 2025, built entirely by a single developer. v3 went live on April 9, 2026.**
 
 ---
 
@@ -28,72 +28,91 @@ Everything traces back to one architectural principle:
 - **The system governs execution and policy.** Routing, memory, initiative, tool use, and enforcement live in durable, auditable runtime layers.
 - **The model is subordinate.** It narrates. It does not route, own memory, control execution, or decide when to speak.
 
-This is not a philosophical position. It is enforced in every pipeline component. The model cannot execute tools without going through `CognitiveBridge`. It cannot initiate conversation without `ThalamoFrontalLoop` granting permission. It cannot edit memory. It cannot promote itself. The system controls it, not the other way around.
+This is enforced in every pipeline component. The model cannot execute tools -- the action dispatcher handles all tool routing deterministically. The model cannot initiate conversation -- the ThalamoFrontal Loop grants permission. The model cannot edit memory. The model cannot promote itself. The system controls it.
 
 ---
 
-## The Architecture
+## The Architecture (v3)
 
-AiMe runs locally on a single machine. No cloud dependency for core operation. No data leaves the user's hardware unless they choose to use cloud model providers.
+AiMe v3 runs the **Self-Bounded Authority (SBA) Spine** -- a governed pipeline where no single component simultaneously owns truth determination, authority judgment, and natural language expression.
 
-### Cognitive Pipeline
-
-Every user turn flows through a strict, role-separated pipeline where no component does another's job:
+### Turn Pipeline
 
 ```
 User Input
     |
-LogicCore              -- Router + orchestrator
+LogicCore                  -- Router + orchestrator
     |
-PrefrontalCortex       -- Deterministic lane selection
+Intent Engine              -- 4-resolver consensus classification
     |
-CognitiveBridge        -- Execution spine, tool routing, REQUEST handling
+Action Dispatcher          -- Deterministic tool routing (15+ intents)
     |
-LanguageModel          -- Single LLM call per turn, dispatched to provider
+SBA Spine
+    |-- StateBuilder       -- Typed turn state from all signals
+    |-- ResponseSynthesizer -- Response type selection
+    |-- AuthorityEngine    -- 6 deterministic governance rules
+    |-- ResponseAssembler  -- Constrained expression packet
     |
-LanguageCortex         -- Sole narrator, UI + voice output
+Single LM Call             -- Constrained by expression packet
+    |
+ComplianceValidator        -- Post-LM verification
+    |
+RIC Gate                   -- Integrity scoring, caveat injection
+    |
+LanguageCortex             -- Sole narrator, UI + voice output
 ```
+
+Every stage except the language model call is deterministic. The model receives a fully assembled context and produces language within governed bounds. It does not decide what tools to run, which memories to recall, or what response type to use.
 
 ### Memory System
 
-Three-layer append-only memory. Evidence is immutable — never rewritten.
+Three-layer append-only memory. Evidence is immutable -- never rewritten.
 
-- **Evidence Ledger** — Append-only SQLite store. The court transcript of the relationship. Never mutated after write.
-- **User Truth** — What the user asserts. Treated as authoritative.
-- **Verifiable Assistant Truth** — What the assistant claims, grounded in evidence or tool output. Distinct from User Truth and stored separately.
-- **Retrieval** — Meilisearch (lexical) + Qdrant (semantic) with RRF fusion and temporal scoping.
+- **Evidence Ledger** -- Append-only SQLite store. The court transcript of the relationship.
+- **User Truth** -- What the user asserts. Treated as authoritative.
+- **Verifiable Assistant Truth** -- What the assistant claims, grounded in evidence or tool output.
+- **Retrieval** -- Meilisearch (lexical) + Qdrant (semantic) with RRF fusion and temporal scoping.
 
-### Living Portrait
+### Bond-Indexed Memory
 
-A six-layer evolving model of who the user is:
+Memory retrieval is organized by **relational state**, not by query similarity. The system does not search for relevant memories; it enters a relational state, and memories surface as structural consequences of that state.
+
+The Bond is a six-dimensional relational state object:
 
 1. Identity anchors
-2. Relational context
-3. Active concerns
-4. Commitments
-5. Behavioral fingerprint
-6. Pattern recognition
+2. Active concerns (dynamic open-thread tracking)
+3. Relational graph (people, emotional register, shared vocabulary)
+4. Pattern layer (behavioral regularities)
+5. Commitment layer (tracked obligations)
+6. Behavioral fingerprint (session-level interaction signature)
 
-This portrait is updated after every turn and persists across sessions. It is what allows the system to maintain relational awareness over months, not just within a conversation.
+This portrait is updated after every turn and persists across sessions, model swaps, and system restarts.
 
-### Governed Initiative
+### Gravity-Weighted Significance
 
-AiMe can initiate conversation without being asked. Morning briefings, return recognition, email surfacing, schedule awareness, medication reminders, birthday nudges — all governed through a proactive pipeline with:
+A two-stage scoring system determines which memories surface:
 
-- Absence tiers (casual check-in through full morning briefing)
-- Spam prevention and preference learning
-- Significance scoring on all events
-- User feedback loops (accept, dismiss, modify)
-- Quiet hours
+**Stage 1 (Significance)** -- computed once per turn, permanently stored:
+```
+sig = 0.30 x affect + 0.30 x novelty + 0.25 x resolution + 0.15 x echo
+```
 
-The model never decides when to speak. The system does.
+**Stage 2 (Gravity)** -- computed dynamically at retrieval time:
+```
+gravity = intent_weight x sqrt(1 + max(significance, citations)) x connectivity x recency_decay
+```
+
+Records exceeding a gravity threshold surface as **latent episodes** -- memories that enter the model's context without being explicitly requested.
 
 ### Behavioral Integrity
 
-- **RIC (Relational Integrity Coefficient)** — Measures groundedness, consistency, trust, honesty, and persona alignment on every response.
-- **SRL (Self-Reflection Layer)** — Tracks behavioral traits, computes stability vectors, runs honesty gates.
-- **UVRG (Universal Values Registry)** — Extracts demonstrated values from real behavioral evidence: `score = demonstrations x significance x resistance x consistency`.
-- **Significance Scoring** — Three-layer scoring (keyword, semantic, heuristic) on all events, emails, and turns.
+- **RIC (Relational Integrity Coefficient)** -- Five-subscale metric (Groundedness, Calibration, Transparency, Helpfulness, Pressure Resistance) that gates every response before it reaches the user.
+- **SRL (Self-Reflection Layer)** -- Behavioral trait tracking, stability vectors, honesty gates.
+- **UVRG (Universal Values Registry)** -- Extracts demonstrated values from real behavioral evidence.
+
+### Governed Initiative
+
+AiMe initiates conversation without being asked. Morning briefings, return recognition, medication reminders, birthday nudges, email surfacing -- all governed through a proactive pipeline with absence tiers, significance thresholds, and quiet hours. The model never decides when to speak. The system does.
 
 ### Model Routing
 
@@ -103,26 +122,54 @@ Multiple providers, governed by the system:
 |------|---------|-----------------|
 | Base | General conversation | Azure GPT |
 | Vision | Image/vision tasks | Gemini |
-| Planning | Structured reasoning | Azure Codex |
+| Planning | Structured reasoning | xAI Grok |
 | Tech | Code/debug | Azure Codex |
-| Local | Fast/offline | LLaMA (local) |
+| Local | Fast/offline | Ollama (GPU) |
 | Game | Creative/playful | xAI Grok |
 
 Models are interchangeable. The system remains itself while models change.
 
 ---
 
-## The Product Family
+## Research Papers
 
-AiMe is part of a connected four-system architecture:
+These papers describe the core innovations in formal detail:
 
-**AiMe** — The governed cognitive runtime. Personal companion. The primary working system.
+1. **[Relational Integrity Coefficient](papers/paper_1_ric.md)** -- Measuring behavioral trustworthiness in persistent AI systems through evidence structure, not preference signals.
 
-**Ethos** — Behavioral value extraction. Extracts what was demonstrated, under what significance, against what resistance. Produces a live value profile from actual behavior, not stated intent. Generates training signal for environmentally trained models.
+2. **[Bond-Indexed Memory](papers/paper_2_bond_indexed_memory.md)** -- Relational state as the organizing principle for AI memory retrieval, replacing query-based search with relationship-primed recall.
 
-**Verum** — Evaluation and certification. Tests AI outputs against behavioral evidence rather than stated ideals. Truth boundaries and inference validation.
+3. **[Gravity-Weighted Significance](papers/paper_3_gravity_significance.md)** -- Automatic memory salience in long-context conversational AI through a two-stage scoring system.
 
-**Marshall** — Infrastructure guardian. Deterministic, auditable operations governance.
+4. **[Memory-Augmented Cognitive Intelligence: A Unified Architecture](papers/paper_4_unified_architecture.md)** -- How all three innovations integrate into a single governed system.
+
+---
+
+## Project Timeline
+
+| Date | Milestone |
+|------|-----------|
+| **2025-11-24** | Development PC assembled, Saluda, SC |
+| 2025-11-28 | First code -- persistent memory system |
+| 2025-12-06 | Cognitive Bridge conceived (three-part architecture) |
+| 2025-12-17 | Append-only evidence ledger created |
+| 2025-12-23 | First conversation recorded |
+| 2025-12-28 | MACI Manifesto |
+| **2026-02-11** | v2 git repository initialized |
+| 2026-02-26 | Living Portrait (Bond object) created |
+| 2026-02-28 | Significance formula, system named BFCS |
+| **2026-03-01** | Bond-Indexed Memory formally defined |
+| **2026-03-03** | RIC formulated |
+| 2026-03-04 | Triple-layer significance, presence awareness |
+| 2026-03-08 | Event graph, proactive turn initiation |
+| 2026-03-11 | RIC Phases 2+3 (five-subscale + drift detection) |
+| **2026-03-28** | v3 project founded |
+| 2026-03-28-29 | Five pillars built: SBA Spine, Living Memory, Task Model, Thought Formation, Experience Memory (44 modules, 371 tests) |
+| **2026-03-30** | REQUEST loop removed -- "the model produces language, not decisions" |
+| 2026-03-31 | SBA spine wired into live pipeline |
+| **2026-04-09** | **v3 live as primary system** |
+
+Full timeline with 21 documented inventions: [Invention Timeline](IP/invention_timeline.md)
 
 ---
 
@@ -131,46 +178,16 @@ AiMe is part of a connected four-system architecture:
 | What most systems do | What AiMe does |
 |---------------------|----------------|
 | Model owns the conversation | System owns the relationship |
-| Memory is a retrieval trick | Memory is append-only, immutable, significance-scored |
+| Memory is a retrieval trick | Memory is Bond-indexed, significance-scored, append-only |
 | Continuity depends on context window | Continuity persists across sessions, models, and months |
-| Initiative is off or ungoverned | Initiative is governed with tiers, significance, and preference learning |
-| Trust is enforced through prompts | Trust emerges from demonstrated values in the relationship |
-| One model, one personality | Multiple models, one stable identity |
+| Model decides what tools to run | System dispatches all tools deterministically |
+| Trust is optimized from preferences | Trust is earned through demonstrated behavioral integrity (RIC) |
+| One model, one personality | Multiple models, one stable governed identity |
 | Tool for tasks | Collaborator that grows with you |
 
 ---
 
-## Current State
-
-AiMe has been in continuous daily use since November 2025. The system runs locally on hardware assembled by the developer, with GPUs acquired through resourceful means (including trading a motorcycle for compute).
-
-**What is live and stable:**
-- Full cognitive pipeline with strict role separation
-- Append-only evidence ledger with truth separation
-- Six-layer living portrait with cross-session persistence
-- Hybrid retrieval (lexical + semantic) with temporal scoping
-- Governed proactive initiative with absence tiers and return recognition
-- Multi-provider model routing (Azure, Gemini, Claude, Grok, LLaMA)
-- Email surfacing with three-layer significance scoring
-- Schedule awareness with event significance and proactive turns
-- Behavioral integrity metrics (RIC, SRL, UVRG)
-- Event graph for concern arcs and relational tracking
-- Web UI with widget system
-- Voice input/output with Azure TTS
-- Significance-filtered conversation injection
-
-**What is planned:**
-- Thought Formation Loop (background idea generation and suggestion)
-- Sandboxed implementation proposals with user approval
-- Environmental training loop (Ethos-derived model fine-tuning)
-- Stronger event graph retrieval
-- Remote/mobile access via private networking
-
----
-
 ## Writing
-
-These essays and blog posts explain the thinking behind the architecture:
 
 ### Blog Series
 
@@ -182,32 +199,32 @@ These essays and blog posts explain the thinking behind the architecture:
 
 ### Essays
 
-- [A Day in the Life with AiMe](essays/a_day_in_the_life_with_amy.md) — Real conversations from the system, quoted directly from the evidence ledger, showing what daily life with a governed AI companion actually looks like.
+- [A Day in the Life with AiMe](essays/a_day_in_the_life_with_amy.md) -- Real conversations from the system, quoted directly from the evidence ledger.
 
 ### Architecture
 
-- [The Bond](architecture/the_bond.md) — The relational primitive at the center of the system.
-- [Human-Led, System-Controlled](architecture/human_led_system_controlled.md) — The governing architectural principle.
-- [Relationship Values Framework](architecture/relationship_values_framework.md) — AI alignment through demonstrated behavior, not declared rules.
-- [Environmentally Trained Models](architecture/environmentally_trained_models.md) — Training models inside their operating environment.
+- [The Bond](architecture/the_bond.md) -- The relational primitive at the center of the system.
+- [Human-Led, System-Controlled](architecture/human_led_system_controlled.md) -- The governing architectural principle.
+- [Relationship Values Framework](architecture/relationship_values_framework.md) -- AI alignment through demonstrated behavior.
+- [Environmentally Trained Models](architecture/environmentally_trained_models.md) -- Training models inside their operating environment.
 
 ### Vision
 
-- [Project Brief](vision/project_brief.md) — Full project overview in plain language.
-- [Product Family Overview](vision/product_family_overview.md) — AiMe, Ethos, Verum, and Marshall.
-- [Development Plan](vision/development_plan.md) — Six-phase upgrade roadmap.
+- [Project Brief](vision/project_brief.md) -- Full project overview in plain language.
+- [Product Family Overview](vision/product_family_overview.md) -- AiMe, Ethos, Verum, and Marshall.
+- [Development Plan](vision/development_plan.md) -- Upgrade roadmap.
 
 ---
 
 ## About the Developer
 
-AiMe was built by a single developer starting in November 2025. The entire system — cognitive pipeline, memory architecture, governed initiative, behavioral integrity, multi-provider routing, web UI, voice integration, and all supporting infrastructure — was designed and implemented solo, with assistance from AI coding tools (Claude Code, Codex, Gemini).
+AiMe was built by John Canady Jr. starting in November 2025. The entire system -- cognitive pipeline, memory architecture, governed initiative, behavioral integrity, multi-provider routing, web UI, voice integration, and all supporting infrastructure -- was designed and implemented solo from a workshop in Saluda, South Carolina.
 
-The project is not open source at this time. This repository contains documentation, essays, and architectural descriptions to share the thinking behind the work.
+Read the full story: [Founder Profile](papers/founder_profile.md)
 
 **Interested in investing, partnering, or learning more?** Read the [Investment & Partnership Brief](OPPORTUNITY.md).
 
-For inquiries: [ai-nhancement](https://github.com/ai-nhancement)
+For inquiries: john@ai-nhancement.com | [ai-nhancement.com](https://www.ai-nhancement.com)
 
 ---
 
