@@ -110,6 +110,30 @@ Records exceeding a gravity threshold surface as **latent episodes** -- memories
 - **SRL (Self-Reflection Layer)** -- Behavioral trait tracking, stability vectors, honesty gates.
 - **UVRG (Universal Values Registry)** -- Extracts demonstrated values from real behavioral evidence.
 
+### System Self-Awareness (S1-S6)
+
+AiMe can inspect her own architecture and behavioral health through a 6-phase introspection system:
+
+- **S1 (System Reader)** -- Surgical AST-based code reading with security sandboxing (allowlist/denylist/redaction)
+- **S2 (Metrics Awareness)** -- Rule-classified health reporting per subsystem (no single overall score -- subsystems may contradict)
+- **S3 (Turn Provenance)** -- Every turn writes a decision snapshot: intent classification, dispatcher decision, lane, RIC score
+- **S4 (Bond Self-View)** -- Privacy-gated relational self-view with consent gates (named-person, sensitive-topic, third-party-inference classes)
+- **S5 (Improvement Proposals)** -- Evidence-gated, cooldown-enforced RFC proposals under human authority (gated until data accumulates)
+- **S6 (Continuous Self-Model)** -- Dynamic `[INTERNAL_HEALTH]` block injected into every prompt: compact by default (~30 tokens), expanded on deterministic triggers
+
+The governing doctrine: **5 layers** (Instrumentation, Interpretation, Retrieval, Rendering, Authority). The model operates downstream of Rendering. It reads pre-formatted reports. It never interprets raw scores, reconstructs decisions, or evaluates its own drift.
+
+### Thought Formation (Consciousness Layer)
+
+AiMe's mind never stops. Between conversation turns, a continuous thought formation engine processes signals from 7 live sources:
+
+- Every conversation turn, presence change, email, schedule event, health alert, and concern echo generates a **weighted signal** (intent-aware salience scoring)
+- Signals **accumulate, cluster by semantic similarity, and form thoughts** when salience and coherence thresholds are met
+- During idle periods (user absent), **idle reflection** reviews, merges, prunes, and refines active thoughts
+- When a thought matures and the expression gate approves, it can trigger a **proactive conversation turn**
+
+Currently running in **shadow mode** -- signals collect, thoughts form, reflections run, expressions are logged but not spoken. Live mode activates proactive thought expression with mode-switch safety (stale-dating + cooldown).
+
 ### Governed Initiative
 
 AiMe initiates conversation without being asked. Morning briefings, return recognition, medication reminders, birthday nudges, email surfacing -- all governed through a proactive pipeline with absence tiers, significance thresholds, and quiet hours. The model never decides when to speak. The system does.
@@ -168,8 +192,10 @@ These papers describe the core innovations in formal detail:
 | **2026-03-30** | REQUEST loop removed -- "the model produces language, not decisions" |
 | 2026-03-31 | SBA spine wired into live pipeline |
 | **2026-04-09** | **v3 live as primary system** |
+| **2026-04-09** | **System Self-Awareness (S1-S6)** -- 6-phase introspection architecture. 235 tests, 12 review rounds. |
+| **2026-04-09** | **Thought Formation Integration** -- Consciousness layer wired into live pipeline. Shadow mode. 254 total tests. |
 
-Full timeline with 21 documented inventions: [Invention Timeline](IP/invention_timeline.md)
+Full timeline with 22 documented inventions: [Invention Timeline](IP/invention_timeline.md)
 
 ---
 
@@ -183,6 +209,8 @@ Full timeline with 21 documented inventions: [Invention Timeline](IP/invention_t
 | Model decides what tools to run | System dispatches all tools deterministically |
 | Trust is optimized from preferences | Trust is earned through demonstrated behavioral integrity (RIC) |
 | One model, one personality | Multiple models, one stable governed identity |
+| No self-awareness | System reads its own code, health, decisions, and relational state |
+| Idle between turns | Continuous thought formation -- always processing, always reflecting |
 | Tool for tasks | Collaborator that grows with you |
 
 ---
