@@ -45,7 +45,7 @@ LogicCore                  -- Router + orchestrator
     |
 Intent Engine              -- 4-resolver consensus classification
     |
-Action Dispatcher          -- Deterministic tool routing (15+ intents)
+Action Dispatcher          -- Deterministic tool routing (16+ intents)
     |
 SBA Spine
     |-- StateBuilder       -- Typed turn state from all signals
@@ -134,6 +134,20 @@ AiMe's mind never stops. Between conversation turns, a continuous thought format
 
 Currently running in **shadow mode** -- signals collect, thoughts form, reflections run, expressions are logged but not spoken. Live mode activates proactive thought expression with mode-switch safety (stale-dating + cooldown).
 
+### File Agent (Sovereign File Manipulation)
+
+AiMe can create, edit, move, copy, delete, and organize files on the user's behalf -- all through a sovereign agent that follows the same governance model as every other subsystem.
+
+- **The response model never plans file operations.** A dedicated File Agent parses user requests, builds plans, and executes them. The model only narrates results.
+- **Every mutation requires confirmation.** Plans are fingerprinted with precondition hashes and expire after 5 minutes. The user sees a deterministic template (not model-generated text) describing exactly what will happen.
+- **Windows-aware sandbox.** 11 threat vectors addressed: junctions, UNC paths, Alternate Data Streams, drive-relative paths, reserved device names, short-name aliases, trailing dots/spaces, reparse points, path length, blocked patterns, and TOCTOU races via double-resolution.
+- **Content smuggling defense.** Files are classified by both extension and content analysis. A `.md` file containing PowerShell commands triggers an elevated warning regardless of what the plan summary says.
+- **Atomic writes.** All file operations use temp-file + `os.replace()`. No artifacts left on failure.
+- **Measured rollback.** Batch operations (e.g., "organize my Downloads") measure filesystem state before and after each rollback step. The user gets a three-way comparison, never a guess.
+- **Undo as a governed action.** Undo generates a plan that must be confirmed -- no silent mutations.
+- **Monthly-sharded evidence.** All file operations are logged to append-only JSONL with immutable plan IDs.
+- **88 tests across 4 phases, 8 review rounds.**
+
 ### Governed Initiative
 
 AiMe initiates conversation without being asked. Morning briefings, return recognition, medication reminders, birthday nudges, email surfacing -- all governed through a proactive pipeline with absence tiers, significance thresholds, and quiet hours. The model never decides when to speak. The system does.
@@ -194,6 +208,8 @@ These papers describe the core innovations in formal detail:
 | **2026-04-09** | **v3 live as primary system** |
 | **2026-04-09** | **System Self-Awareness (S1-S6)** -- 6-phase introspection architecture. 235 tests, 12 review rounds. |
 | **2026-04-09** | **Thought Formation Integration** -- Consciousness layer wired into live pipeline. Shadow mode. 254 total tests. |
+| **2026-04-10** | **File Agent v2** -- Sovereign file manipulation (create/edit/move/copy/delete/organize). Windows sandbox, fingerprinted plans, content smuggling defense, measured rollback. 88 tests, 8 review rounds. |
+| 2026-04-10 | Browser Agent spec written (CDP-based Chrome control). |
 
 Full timeline with 22 documented inventions: [Invention Timeline](IP/invention_timeline.md)
 
@@ -211,6 +227,7 @@ Full timeline with 22 documented inventions: [Invention Timeline](IP/invention_t
 | One model, one personality | Multiple models, one stable governed identity |
 | No self-awareness | System reads its own code, health, decisions, and relational state |
 | Idle between turns | Continuous thought formation -- always processing, always reflecting |
+| File ops require model decisions | Sovereign file agent with sandbox, confirmation, and measured rollback |
 | Tool for tasks | Collaborator that grows with you |
 
 ---
