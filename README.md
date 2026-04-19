@@ -43,19 +43,19 @@ User Input
     |
 LogicCore                  -- Router + orchestrator
     |
-Intent Engine              -- 4-resolver consensus classification
+Stage Zero                 -- Governed intent specialist (C-GEMs)
     |
-Action Dispatcher          -- Deterministic tool routing (16+ intents)
+Action Dispatcher          -- Deterministic tool routing (36 intents)
     |
 SBA Spine
     |-- StateBuilder       -- Typed turn state from all signals
     |-- ResponseSynthesizer -- Response type selection
-    |-- AuthorityEngine    -- 6 deterministic governance rules
+    |-- AuthorityEngine    -- Deterministic governance rules
     |-- ResponseAssembler  -- Constrained expression packet
     |
 Single LM Call             -- Constrained by expression packet
     |
-ComplianceValidator        -- Post-LM verification
+ComplianceValidator        -- Post-LM verification (four-mode)
     |
 RIC Gate                   -- Integrity scoring, caveat injection
     |
@@ -63,6 +63,17 @@ LanguageCortex             -- Sole narrator, UI + voice output
 ```
 
 Every stage except the language model call is deterministic. The model receives a fully assembled context and produces language within governed bounds. It does not decide what tools to run, which memories to recall, or what response type to use.
+
+**SBA runtime modes.** The post-LM ComplianceValidator runs in one of four modes, set by a single config flag:
+
+| Mode | Pre-LM authority block | Post-LM compliance | Output alteration |
+|------|------------------------|--------------------|-------------------|
+| `off` | -- | -- | -- |
+| `shadow` | runs | -- | -- |
+| `flag` *(current)* | runs | runs, logged only | **never** |
+| `govern` | runs | runs, enforced | can correct or replace with deterministic fallback |
+
+AiMe ran in `shadow` from v3 launch (2026-04-09) through 2026-04-18. The first trial of `govern` surfaced false positives in the compliance validator's word-overlap heuristic, so a new `flag` mode was introduced as the calibration ground: the full govern pipeline runs (the authority block is injected, the validator executes), verdicts are logged as `would-pass` / `would-correct` / `would-drop`, but the raw LM output always passes through unchanged. Forensic entries in `logs/sba_spine.log` drive evidence-based tuning of the validator's rules before re-attempting govern.
 
 ### Memory System
 
@@ -109,6 +120,37 @@ Records exceeding a gravity threshold surface as **latent episodes** -- memories
 - **RIC (Relational Integrity Coefficient)** -- Five-subscale metric (Groundedness, Calibration, Transparency, Helpfulness, Pressure Resistance) that gates every response before it reaches the user.
 - **SRL (Self-Reflection Layer)** -- Behavioral trait tracking, stability vectors, honesty gates.
 - **UVRG (Universal Values Registry)** -- Extracts demonstrated values from real behavioral evidence.
+
+### Coordination of Governed Expert Models (C-GEMs)
+
+AiMe's alternative to Mixture of Experts. Where MoE is a within-model routing mechanism across expert sub-networks, C-GEMs is a **between-model orchestration pattern**: discrete task specialists, each a governed contract over an existing foundation model (not a new model), each bounded by a tight input/output contract, each auditable, each replaceable without retraining.
+
+The defining principle:
+
+> **Intelligence is the coordination of specialized systems under governance.**
+
+Key architectural commitments:
+
+- **No custom training.** Specialists are existing models operating under written contracts. Contract + allowed tool surface = specialist identity. No weights to ship.
+- **Tight read-only tool surfaces.** The Recall Search Specialist gets three tools -- `ledger_sql`, `read_file`, `list_files` -- each allowlist-and-denylist-gated at the filesystem layer.
+- **Minimal contracts beat elaborate ones.** Benchmark-verified across five rounds: the winning contract reduced to a single axiom ("the ledger is the source of truth") plus a specificity rule.
+- **Cloud primary + local fallback cascade.** Explicit, measured, recorded. Intent: xAI Grok → qwen3-coder:30b local → legacy consensus → fail-open. Recall Search: Grok 4.1 Fast Reasoning → Claude Sonnet 4.6.
+- **Specialist output is evidence, not authority.** The SBA spine still runs above; the language model still renders; compliance still enforces. A specialist can be wrong -- that does not corrupt the turn.
+- **Deterministic specialists accommodated.** The Portrait Rebuilder is a no-LLM specialist: `tools/rebuild_user_profile.py` aggregates ledger truth records into the user_profile table. Living Memory's invariant -- no LLM in the refinery -- is preserved.
+
+**Live specialists (as of 2026-04-18):** Intent (Stage Zero), Recall Search v1, Portrait Rebuilder (deterministic).
+
+### User-Authored Identity Architecture
+
+Identity lives in a physically isolated `user_profile` table, separate from the observational `identity_kv` table the runtime consolidation pipeline writes to. Three tiers of trust enforced by physical write isolation, not by logical flags:
+
+| Tier | Source | Table |
+|------|--------|-------|
+| Tier 1 (`user_authored`) | The user via the widget | `user_profile` |
+| Tier 2 (`portrait_rebuilder`) | Deterministic ledger aggregator | `user_profile` |
+| Tier 3 (heuristic observation) | Legacy consolidation pipeline | `identity_kv` (concerns / patterns / commitments only) |
+
+The LM portrait block is split: `[IDENTITY]` and `[PEOPLE]` render from `user_profile` with strict `source='user_authored'` filter; `[CONCERNS]`, `[PATTERNS]`, `[COMMITMENTS]` render from `identity_kv`. Two id_keys -- `anchors` and `relations` -- are **architecturally frozen** from runtime writes through `_FROZEN_PORTRAIT_KEYS` in the write path; the lock is the code, not a policy flag. This closes, by architecture, the contamination class where third-party names pasted in conversation could route into the user's own relations.
 
 ### System Self-Awareness (S1-S6)
 
@@ -210,8 +252,15 @@ These papers describe the core innovations in formal detail:
 | **2026-04-09** | **Thought Formation Integration** -- Consciousness layer wired into live pipeline. Shadow mode. 254 total tests. |
 | **2026-04-10** | **File Agent v2** -- Sovereign file manipulation (create/edit/move/copy/delete/organize). Windows sandbox, fingerprinted plans, content smuggling defense, measured rollback. 88 tests, 8 review rounds. |
 | 2026-04-10 | Browser Agent spec written (CDP-based Chrome control). |
+| **2026-04-15** | **C-GEMs conceived** -- Coordination of Governed Expert Models. Pivot from training custom models to contract-governed task specialists using existing foundation models. |
+| **2026-04-16** | **Intent Specialist (Stage Zero) LIVE** -- Governed pre-LM intent classification with cloud primary (xAI Grok) + local fallback (qwen3-coder:30b) + legacy consensus + fail-open cascade. 15 models benchmarked, 200 real ledger turns evaluated. |
+| **2026-04-16** | **Recall Search Specialist v1 LIVE** -- Single LLM call with read-only `ledger_sql` / `read_file` / `list_files` tool surface. Grok 4.1 Fast Reasoning primary, Sonnet 4.6 fallback. Five-round benchmark progression settled on a minimal contract: "the ledger is the source of truth." |
+| **2026-04-17** | **User-Authored Profile Table LIVE** -- Dedicated `user_profile` table physically isolated from the runtime consolidation pipeline. Three-tier trust (user_authored / portrait_rebuilder / heuristic) enforced by write isolation. Schema-driven authoritative reader with strict default + explicit opt-in. Deterministic `tools/rebuild_user_profile.py` replaces the proposed LLM-based Portrait Builder Specialist. |
+| **2026-04-17** | **User Profile Widget LIVE** -- Full user-facing profile surface: widget summary, modal editor with dirty-state discipline, `GET/PUT /api/profile`, legacy-config import. 5 phases × 2 review rounds = 10 rounds. |
+| **2026-04-18** | **Portrait Injection Split LIVE** -- `[IDENTITY]`/`[PEOPLE]` sourced from `user_profile` (strict user_authored); `[CONCERNS]`/`[PATTERNS]`/`[COMMITMENTS]` stay in `identity_kv`. `_FROZEN_PORTRAIT_KEYS` architecturally locks `anchors` and `relations` from all runtime writes regardless of config. |
+| **2026-04-18** | **SBA four-mode progression (`flag` mode introduced)** -- Govern trial (06:31) surfaced Rule 2 word-overlap false positives within the first turns, dropping ordinary elaborative responses. New `flag` mode (06:50) runs the full post-LM pipeline (authority block injected, validator executed) but never alters output -- the calibration ground between shadow and govern. Rule 2 Layer 1 narrowed from bag-of-words to proper-noun grounding (06:56). |
 
-Full timeline with 22 documented inventions: [Invention Timeline](IP/invention_timeline.md)
+Full timeline with 26 documented inventions: [Invention Timeline](IP/invention_timeline.md)
 
 ---
 
