@@ -43,7 +43,7 @@ User Input
     |
 LogicCore                  -- Router + orchestrator
     |
-Stage Zero                 -- Governed intent specialist (C-GEMs)
+Stage Zero                 -- Governed intent specialist (COGS)
     |
 Action Dispatcher          -- Deterministic tool routing (36 intents)
     |
@@ -121,9 +121,11 @@ Records exceeding a gravity threshold surface as **latent episodes** -- memories
 - **SRL (Self-Reflection Layer)** -- Behavioral trait tracking, stability vectors, honesty gates.
 - **UVRG (Universal Values Registry)** -- Extracts demonstrated values from real behavioral evidence.
 
-### Coordination of Governed Expert Models (C-GEMs)
+### Coordination of Governed Specialists (COGS)
 
-AiMe's alternative to Mixture of Experts. Where MoE is a within-model routing mechanism across expert sub-networks, C-GEMs is a **between-model orchestration pattern**: discrete task specialists, each a governed contract over an existing foundation model (not a new model), each bounded by a tight input/output contract, each auditable, each replaceable without retraining.
+AiMe's alternative to Mixture of Experts. Where MoE is a within-model routing mechanism across expert sub-networks, COGS is a **between-model orchestration pattern**: discrete task specialists, each a governed contract over an existing foundation model (not a new model), each bounded by a tight input/output contract, each auditable, each replaceable without retraining.
+
+(Originally named "C-GEMs / Coordination of Governed Expert Models" at conception on 2026-04-15; renamed to COGS on 2026-04-20 to clarify that specialists are not new expert models but existing foundation models operating under governed contracts.)
 
 The defining principle:
 
@@ -138,7 +140,7 @@ Key architectural commitments:
 - **Specialist output is evidence, not authority.** The SBA spine still runs above; the language model still renders; compliance still enforces. A specialist can be wrong -- that does not corrupt the turn.
 - **Deterministic specialists accommodated.** The Portrait Rebuilder is a no-LLM specialist: `tools/rebuild_user_profile.py` aggregates ledger truth records into the user_profile table. Living Memory's invariant -- no LLM in the refinery -- is preserved.
 
-**Live specialists (as of 2026-04-18):** Intent (Stage Zero), Recall Search v1, Portrait Rebuilder (deterministic).
+**Live specialists (as of 2026-04-21):** Intent (Stage Zero), Recall Search v1, Portrait Rebuilder (deterministic). **Concerns Specialist**: code shipped and benchmarked (Grok 4.1 Fast Non-Reasoning 96/100 primary at ~454 ms median, Claude Haiku 4.5 96/100 fallback at ~884 ms median, across a 100-case fixture); flag currently `enabled=false` / `write_mode=shadow` pending activation.
 
 ### User-Authored Identity Architecture
 
@@ -252,13 +254,17 @@ These papers describe the core innovations in formal detail:
 | **2026-04-09** | **Thought Formation Integration** -- Consciousness layer wired into live pipeline. Shadow mode. 254 total tests. |
 | **2026-04-10** | **File Agent v2** -- Sovereign file manipulation (create/edit/move/copy/delete/organize). Windows sandbox, fingerprinted plans, content smuggling defense, measured rollback. 88 tests, 8 review rounds. |
 | 2026-04-10 | Browser Agent spec written (CDP-based Chrome control). |
-| **2026-04-15** | **C-GEMs conceived** -- Coordination of Governed Expert Models. Pivot from training custom models to contract-governed task specialists using existing foundation models. |
+| **2026-04-15** | **COGS conceived** -- Coordination of Governed Specialists (originally "C-GEMs / Coordination of Governed Expert Models"; renamed to COGS on 2026-04-20). Pivot from training custom models to contract-governed task specialists using existing foundation models. |
 | **2026-04-16** | **Intent Specialist (Stage Zero) LIVE** -- Governed pre-LM intent classification with cloud primary (xAI Grok) + local fallback (qwen3-coder:30b) + legacy consensus + fail-open cascade. 15 models benchmarked, 200 real ledger turns evaluated. |
 | **2026-04-16** | **Recall Search Specialist v1 LIVE** -- Single LLM call with read-only `ledger_sql` / `read_file` / `list_files` tool surface. Grok 4.1 Fast Reasoning primary, Sonnet 4.6 fallback. Five-round benchmark progression settled on a minimal contract: "the ledger is the source of truth." |
 | **2026-04-17** | **User-Authored Profile Table LIVE** -- Dedicated `user_profile` table physically isolated from the runtime consolidation pipeline. Three-tier trust (user_authored / portrait_rebuilder / heuristic) enforced by write isolation. Schema-driven authoritative reader with strict default + explicit opt-in. Deterministic `tools/rebuild_user_profile.py` replaces the proposed LLM-based Portrait Builder Specialist. |
 | **2026-04-17** | **User Profile Widget LIVE** -- Full user-facing profile surface: widget summary, modal editor with dirty-state discipline, `GET/PUT /api/profile`, legacy-config import. 5 phases × 2 review rounds = 10 rounds. |
 | **2026-04-18** | **Portrait Injection Split LIVE** -- `[IDENTITY]`/`[PEOPLE]` sourced from `user_profile` (strict user_authored); `[CONCERNS]`/`[PATTERNS]`/`[COMMITMENTS]` stay in `identity_kv`. `_FROZEN_PORTRAIT_KEYS` architecturally locks `anchors` and `relations` from all runtime writes regardless of config. |
 | **2026-04-18** | **SBA four-mode progression (`flag` mode introduced)** -- Govern trial (06:31) surfaced Rule 2 word-overlap false positives within the first turns, dropping ordinary elaborative responses. New `flag` mode (06:50) runs the full post-LM pipeline (authority block injected, validator executed) but never alters output -- the calibration ground between shadow and govern. Rule 2 Layer 1 narrowed from bag-of-words to proper-noun grounding (06:56). |
+| **2026-04-20** | **C-GEMs renamed to COGS** -- "Coordination of Governed Expert Models" became "Coordination of Governed Specialists" to reflect that specialists are not new expert models but existing foundation models operating under governed contracts. |
+| **2026-04-20** | **Concerns Specialist -- Phases 1-5 built** -- COGS governed task specialist for the long-noisy concerns/patterns/commitments pipeline. Single stateless LLM call classifies one user turn as `open`/`close`/`none`, extracts a grounded topic, labels with exactly one type from a fixed canonical set. Follows the COGS + Shape+Rules validator pattern proven by Intent/Recall/File specialists: contract, Pydantic shape schemas, ordered rule pipeline (schema → first-person framing → extractive grounding → matched close-ref → type plausibility → topic shape → signal precedence → adversarial-quote rejection), proposal/gate/write layers enforcing invariants I1-I7, Stage C runtime with shadow→active write modes. 117 tests across seven suites. 5 review rounds (R1+R2 per phase). |
+| **2026-04-21** (AM) | **Ledger silent-write failure recovered -- 23-day gap closed** -- Production logs showed the `content_hash` column had been added to the ledger schema constructor but never applied via `ALTER TABLE` on the live DB; every ledger write had been silently dropping for 23 days (caller suppressed the exception as a log line). Fix: synchronous pre-uvicorn migration runner added; cortex `skipped` log path upgraded to WARN on `"(error:"` entries so silent failures become visible. Recovery: `tools/recover_live_memory_to_ledger.py` backfilled 1,632 rows from Living Memory into the ledger, preserving timestamps, roles, and content_hashes. |
+| **2026-04-21** (PM) | **Concerns Specialist benchmarked → Grok primary, Haiku fallback** -- Full-day benchmark iteration against a 100-case fixture (41 open_clear, 20 close_clear, 12 ambiguous_abstain, 12 fragment_noise, 15 hypothetical_thirdparty). Final scores: Grok 4.1 Fast Non-Reasoning **96/100** at 454 ms median; Claude Haiku 4.5 **96/100** at 884 ms median. Architectural decisions that drove 77-78% → 96%: iterative stemmer + prefix-overlap validator loosening; **single-type doctrine** (each concern carries exactly one type); **type priority hierarchy** `family > health > work > social > financial > legal`; **`user_family` context injection** disambiguating family vs social on bare first names; **fractional grounding** (≥70% content-word overlap or ≤1 unmatched word); **close-grounding single-stem overlap** for terse references. Status EOD: all code shipped; `concerns_specialist.enabled=false`, `write_mode=shadow` until user flips. |
 
 Full timeline with 26 documented inventions: [Invention Timeline](IP/invention_timeline.md)
 
